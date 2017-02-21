@@ -1,0 +1,60 @@
+body {
+font-family: monospace;
+font-size: 15px;
+}
+
+body.list {
+background: black;
+}
+
+body.article {
+background: white;
+color: #000000;
+}
+
+div.container {
+width: 800px;
+max-width: 90vw;
+margin: 0px auto;
+}
+
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+a:hover {
+color: #16d9fe;
+}
+
+ul {
+list-style: none;
+width: 100%;
+padding: 0px;
+box-sizing: border-box;
+}
+
+li {
+width: 200px;
+height: 200px;
+margin: 0px 5px;
+display: inline-flex;
+background: #ffffff;
+background-position: center;
+padding: 0;
+box-sizing: border-box;
+}
+
+li > a {
+width: 100%;
+padding: 20px;
+}
+
+h1 + h3 {
+margin-top: -20px;
+}
+
+h1 {
+text-transform: capitalize;
+}

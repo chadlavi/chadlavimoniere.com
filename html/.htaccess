@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule ^$ /index.php
+RewriteRule ^contact$ /contact.php
+RewriteRule ^article\/(\d+).*$ /article\.php\?article\=$1 [L]
