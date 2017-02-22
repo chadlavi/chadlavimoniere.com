@@ -1,7 +1,8 @@
 <?php
 error_reporting(E_ALL); ini_set('display_errors', 'on');
 #get query string but strip out all but A-Z, a-z, and 0-9
-$term = preg_replace("/[^a-zA-Z0-9]+/", "",$_GET['q']);
+$term = str_replace("%20"," ",$_GET['q']);
+$term = preg_replace("/[^a-zA-Z0-9\s]+/", "",$term);
 $query = "select id, name, image_url, nameOccurrences+bodyOccurrences as weightedScore from ( SELECT p.id, p.name, p.image_url, SUM(((LENGTH(p.name) - LENGTH(REPLACE(lower(p.name), '".$term."', '')))/(LENGTH('".$term."')/2))) AS nameOccurrences, SUM(((LENGTH(p.body) - LENGTH(REPLACE(lower(p.body), '".$term."', '')))/(LENGTH('".$term."')/1))) AS bodyOccurrences FROM article AS p GROUP BY p.id ORDER BY nameOccurrences DESC, bodyOccurrences DESC) x WHERE nameOccurrences+bodyOccurrences > 0 ORDER BY weightedScore DESC, id DESC;";
 include '../php/header.php';
 
