@@ -17,16 +17,14 @@ function seoUrl($string) {
 }
 
 if ($result = $mysqli->query("SELECT id, name, image_url from article order by updated desc")) {
-echo"<body class=\"list\">";
-include '../php/nav.php';
-echo "<div class=\"container\">";
-
+    echo"<body class=\"list\">";
+    include '../php/nav.php';
+    echo "<div class=\"container\">";
     echo "<ul>";
     while ($row = mysqli_fetch_assoc($result)) {
-      echo "<li style=\"background-image: url(", $row['image_url'], ")\"><a href=\"article/", $row['id'], "/",seoUrl($row['name']),"\">", $row['name'], "</a></li>";
+        echo "<li style=\"background-image: url(", $row['image_url'], ")\"><a href=\"/article/", $row['id'], "/",seoUrl($row['name']),"\">", $row['name'], "</a></li>";
     }
     echo "</ul>";
-
     /* free result set */
     $result->close();
 }
