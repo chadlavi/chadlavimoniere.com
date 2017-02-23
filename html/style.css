@@ -29,6 +29,7 @@ margin: 15px 0px 0px 0px;
 width: 100%;
 max-width: 100vw;
 }
+
 body.list>div.container ul li {
 width: 100%;
 max-width: 100%;
@@ -107,6 +108,10 @@ width: 820px;
 max-width: 90vw;
 margin: 40px auto;
 margin-bottom: 100px;
+}
+
+body.list>div.container>p.search-title {
+text-align: center;
 }
 
 div.article {

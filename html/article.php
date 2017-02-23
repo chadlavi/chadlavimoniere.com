@@ -1,5 +1,5 @@
 <?php
-include '../php/header.php';
+include '../php/connect.php';
 $id = $_GET['article'];
 
 // if an id is passed in the URL, load that article
@@ -10,13 +10,10 @@ $result = $mysqli->query("SELECT * from article where id = $id");
        $datetime = new DateTime($row['updated']);
        $target_timezone = new DateTimeZone('America/New_York');
        $datetime->setTimeZone($target_timezone);
-       echo "<meta name=\"description\" content=\"", $row['meta'], "\">
-  <meta name=\"keywords\" content=\"UX, User Experience Design, Web Design, prototyping\">
-  <meta name=\"author\" content=\"Chad Lavimoniere\">
-  <title>", $row['name'],"</title>
-</head>
-
-<body class=\"article-page\">";
+       $title = $row['name'];
+       $meta = $row['meta'];
+       include '../php/header.php';
+echo "<body class=\"article-page\">";
 include '../php/nav.php';
 echo" <div class=\"container\">";
 

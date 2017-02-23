@@ -1,4 +1,7 @@
 <?php
+include '../php/connect.php';
+$title="Case Studies";
+$meta="Case studies in User Experience design";
 include '../php/header.php';
 
 function seoUrl($string) {
@@ -14,13 +17,7 @@ function seoUrl($string) {
 }
 
 if ($result = $mysqli->query("SELECT id, name, image_url from article order by updated desc")) {
-   echo "<meta name=\"description\" content=\"Case studies in User Experience design\">
-  <meta name=\"keywords\" content=\"UX, User Experience Design, Web Design, prototyping\">
-  <meta name=\"author\" content=\"Chad Lavimoniere\">
-  <title>Case Studies</title>
-</head>
-
-<body class=\"list\">";
+echo"<body class=\"list\">";
 include '../php/nav.php';
 echo "<div class=\"container\">";
 
