@@ -2,7 +2,6 @@
 include '../php/connect.php';
 $id = $_GET['article'];
 
-# if an id is passed in the URL, load that article
 if (isset($_GET['article'])){
     $result = $mysqli->query("SELECT * from article where id = {$id}");
     if (mysqli_num_rows($result)>0) {

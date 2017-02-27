@@ -1,4 +1,7 @@
 <?php
+if (empty($title) || empty($meta)) {
+    echo 'title and meta are required variables for header';
+}
 echo "<!DOCTYPE html> 
 <html> 
 <head> 

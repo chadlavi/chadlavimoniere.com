@@ -12,13 +12,9 @@ include '../php/header.php';
 $query = "select id, name, image_url, nameOccurrences+bodyOccurrences as weightedScore from ( SELECT p.id, p.name, p.image_url, SUM(((LENGTH(p.name) - LENGTH(REPLACE(lower(p.name), '{$term}', '')))/(LENGTH('{$term}')/2))) AS nameOccurrences, SUM(((LENGTH(p.body) - LENGTH(REPLACE(lower(p.body), '{$term}', '')))/(LENGTH('{$term}')/1))) AS bodyOccurrences FROM article AS p GROUP BY p.id ORDER BY nameOccurrences DESC, bodyOccurrences DESC) x WHERE nameOccurrences+bodyOccurrences > 0 ORDER BY weightedScore DESC, id DESC;";
 
 function seoUrl($string) {
-    //Lower case everything
     $string = strtolower($string);
-    //Make alphanumeric (removes all other characters)
     $string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
-    //Clean up multiple dashes or whitespaces
     $string = preg_replace("/[\s-]+/", " ", $string);
-    //Convert whitespaces and underscore to dash
     $string = preg_replace("/[\s_]/", "-", $string);
     return $string;
 }
