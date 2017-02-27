@@ -8,5 +8,3 @@ Simple LAMP stack portfolio site
     * Add contact form
     * Add social media links?
 * Update article contents
-
-*
