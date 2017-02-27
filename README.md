@@ -1,5 +1,5 @@
-# ubuntubox #
-Simple LAMP stack portfolio site
+# chadlavimoniere.com #
+The source code for my personal portfolio website.
 
 ### TODOS
 
