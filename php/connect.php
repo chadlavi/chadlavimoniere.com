@@ -1,5 +1,5 @@
 <?php
-$config = parse_ini_file('../config.ini'); 
+$config = parse_ini_file(realpath('/root/config.ini')); 
 
 $mysqli = new mysqli("localhost", $config['username'], $config['password'], $config['dbname']);
 
