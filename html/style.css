@@ -146,7 +146,7 @@ div.container>ul>li:hover {
 }
 
 div.container>ul>li>a:hover, .container ul li a:active {
-    background: hsla(120, 0%, 20%, 0.5);
+    background: hsla(120, 0%, 0%, 0.85);
 }
 
 .article-page .container a {
