@@ -85,7 +85,7 @@ div.navwrap div.nav {
     width: 100%;
     background: hsla(0, 100%, 100%, 0.95);
     box-shadow: 0px 1px 2px hsla(0, 0%, 0%, 0.1);
-    z-index: 1;
+    z-index: 3;
 }
 
 div.navwrap div.nav ul {
@@ -137,11 +137,19 @@ a {
 }
 
 div.container>ul>li {
-    transition: all .1s ease-in-out;
-
+    position: relative;
+    overflow: hidden;
 }
 
-div.container>ul>li:hover {
+div.container>ul>li>div.background {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .1s ease-in-out;
+}
+
+div.container>ul>li>a:hover+div.background {
     transform: scale(1.02);
 }
 
@@ -187,6 +195,7 @@ div.container>ul>li>a:hover, .container ul li a:active {
 }
 
 .container ul li > a {
+    z-index: 1;
     width: 100%;
     padding: 20px;
     background: hsla(120, 0%, 0%, 0.5);
