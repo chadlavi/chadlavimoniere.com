@@ -1,5 +1,6 @@
 <?php
 include '../php/connect.php';
+include '../php/seoURL.php';
 error_reporting(E_ALL); ini_set('display_errors', 'on');
 if (empty($_GET['q'])) {
     header( 'Location: /');
@@ -11,13 +12,6 @@ $meta = "Case studies related to ".$term;
 include '../php/header.php';
 $query = "select id, name, image_url, nameOccurrences+bodyOccurrences as weightedScore from ( SELECT p.id, p.name, p.image_url, SUM(((LENGTH(p.name) - LENGTH(REPLACE(lower(p.name), '{$term}', '')))/(LENGTH('{$term}')/2))) AS nameOccurrences, SUM(((LENGTH(p.body) - LENGTH(REPLACE(lower(p.body), '{$term}', '')))/(LENGTH('{$term}')/1))) AS bodyOccurrences FROM article AS p GROUP BY p.id ORDER BY nameOccurrences DESC, bodyOccurrences DESC) x WHERE nameOccurrences+bodyOccurrences > 0 ORDER BY weightedScore DESC, id DESC;";
 
-function seoUrl($string) {
-    $string = strtolower($string);
-    $string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
-    $string = preg_replace("/[\s-]+/", " ", $string);
-    $string = preg_replace("/[\s_]/", "-", $string);
-    return $string;
-}
 $result = $mysqli->query($query) or trigger_error(mysql_error()." ".$query);
 if ($result) {
     echo"<body class=\"list\">";
