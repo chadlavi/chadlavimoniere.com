@@ -1,6 +1,7 @@
 <?php
 $title = "Contact";
 $meta = "Contact Info";
+include '../php/gzip.php';
 include '../php/header.php';
 
 echo "<body class=\"article-page\">";

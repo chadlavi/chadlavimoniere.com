@@ -1,4 +1,5 @@
 <?php
+include '../php/gzip.php';
 include '../php/connect.php';
 $title="Case Studies";
 $meta="Case studies in User Experience design";

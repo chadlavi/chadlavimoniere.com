@@ -1,4 +1,5 @@
 <?php
+include '../php/gzip.php';
 include '../php/connect.php';
 include '../php/timezone.php';
 $id = $_GET['article'];
