@@ -123,6 +123,67 @@ div.article {
     margin-top: 40px;
 }
 
+div.container div.error {
+    background: hsla(0, 80%, 90%, 1);
+    color: red;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px 0px;
+    width: 400px;
+    max-width: 100%;
+}
+
+div.container div.success {
+    background: hsla(120, 80%, 90%, 1);
+    color: green;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px 0px;
+    width: 400px;
+    max-width: 100%;
+}
+
+.success *, .error * {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.container form .field {
+    max-width: 100%;
+    width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+div.container form button.submit {
+    max-width: 100%;
+    min-width: 25%;
+    border-radius: 0px;
+    background: #4F9D69;
+    color: white;
+    box-shadow: none;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+div.container form .reset {
+    background: none;
+    border: none;
+    color: #4F9D69;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+
 .article img {
     max-width: 100%;
     margin: 0px auto;
