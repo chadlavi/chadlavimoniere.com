@@ -51,8 +51,11 @@
         font-size: 2.25em;
         margin: 10px 0px;
     }
-    .article-page .container p {
+    .article-page .container .article p {
         font-size: 2.5em;
+    }
+    .article-page .container .article code {
+        font-size: 2em;
     }
 }
 
@@ -129,6 +132,22 @@ div.article {
 .article p {
     line-height: 1.5;
     font-weight: 300;
+}
+
+.article code { 
+    font-family: monospace;
+    background: #eee;
+    margin: 1em auto;
+    padding: 10px 15px 25px 15px;
+    max-height: 1000px;
+    overflow: scroll;
+    border-radius: 3px;
+    box-sizing: border-box;
+    white-space: pre;
+    display: block;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
 }
 
 a {
