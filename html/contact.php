@@ -8,7 +8,9 @@ echo "<body class=\"article-page\">";
 
 include '../php/nav.php';
 
-echo" <div class=\"container\"><h1>Contact</h1><div class=\"article\"><p>Example Contact page content</p></div>";
+echo" <div class=\"container\"><h1>Contact</h1><div class=\"article\">";
+include '../php/contact.php';
+echo"</div>";
 
 include '../php/footer.php';
 ?>
