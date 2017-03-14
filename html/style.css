@@ -57,6 +57,23 @@
     .article-page .container .article code {
         font-size: 2em;
     }
+	.article-page .container .contact form * {
+		font-size: 2em;
+		width: 100%;
+	}
+	.article-page .container .contact form input, .article-page .container .contact form textarea {
+		font-size: 1.5rem;
+	}
+	.article-page .container .contact form .submit, .article-page .container .contact form .reset {
+		font-size: 2em;
+		padding: 30px;
+	}
+	.article-page .container .contact .error, .article-page .container .contact .success {
+		width: 100%;
+	}
+	.article-page .container .contact .error h3, .article-page .container .contact .success h3 {
+		font-size: 3em;
+	}
 }
 
 /*normal styles*/
@@ -153,7 +170,7 @@ div.container form .field {
     width: 400px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 0.75em;
     box-sizing: border-box;
     resize: none;
 }
