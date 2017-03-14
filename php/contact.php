@@ -32,7 +32,7 @@ if (isset($_REQUEST['submitted'])) {
   echo '<hr /><h3>The following occurred:</h3><ul>'; 
   foreach ($errors as $msg) { echo '<li>'. $msg . '</li>';}
   echo '</ul><h3>Your mail could not be sent due to input errors.</h3><hr />';}
-   else{echo '<hr /><h3 align="center">Your mail was sent. Thank you!</h3><hr />'; 
+   else{echo '<hr /><h3 align="center">Your message was sent. Thanks for getting in touch!</h3><hr />'; 
   }
   }
 
