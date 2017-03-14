@@ -5,6 +5,5 @@ The source code for my personal portfolio website.
 
 * Add search form
 * Complete contact page
-    * Add contact form
     * Add social media links?
 * Update article contents
