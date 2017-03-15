@@ -8,7 +8,7 @@ if (isset($_REQUEST['submitted'])) {
    
     if (!empty($_REQUEST['email'])) {
         $email = $_REQUEST['email'];
-        $pattern = "/.+@.+\..+/";
+        $pattern = '/.+@.+\..+/';
         if (preg_match($pattern,$email)){ 
             $email = $_REQUEST['email'];
         } else { 
@@ -20,7 +20,7 @@ if (isset($_REQUEST['submitted'])) {
 
     if (!empty($_REQUEST['name'])) {
         $name = $_REQUEST['name'];
-        $pattern = "/[a-zA-Z0-9\ ]{2,20}/";
+        $pattern = '/[a-zA-Z0-9\ ]{2,20}/';
         if (preg_match($pattern,$name)){ 
             $name = $_REQUEST['name'];
         } else { 
@@ -46,7 +46,7 @@ if (isset($_REQUEST['submitted'])) {
         echo '<div class="success"><h3>Message Sent!</h3><p>Thanks for getting in touch!</p></div>'; 
         $from = "From: '" . $name . "' <" . $email . ">\r\nReply-to: ". $email ."";
         $to = $config['to']; 
-        $subject = "contact from " . $name . "";
+        $subject = 'contact from ' . $name . '';
         $body = $message;
         mail($to,$subject,$body,$from);
         return;
