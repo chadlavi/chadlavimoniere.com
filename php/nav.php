@@ -6,10 +6,10 @@ echo'<div class="navwrap">
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="/contact">Contact</a>
+                <a href="/about">About</a>
             </li>
             <li>
-                <a href="">Example</a>
+                <a href="/contact">Contact</a>
             </li>
         </ul>
     </div>
