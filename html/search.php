@@ -6,7 +6,7 @@ error_reporting(E_ALL); ini_set('display_errors', 'on');
 if (empty($_GET['q'])) {
     header( 'Location: /');
 }
-$term = str_replace('%20',' ',$_GET['q']);
+$term = str_replace('%20', ' ', $_GET['q']);
 $term = preg_replace('/[^a-zA-Z0-9\s]+/', '', $term);
 $title = 'Search results for "' . $term . '"';
 $meta = 'Case studies related to ' . $term;
