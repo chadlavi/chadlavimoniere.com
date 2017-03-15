@@ -3,10 +3,9 @@
 /*mobile styles*/
 
 @media only screen 
-  /*and (min-device-width: 414px)  */
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) { 
     body {
         width: 100%;
         margin: 0px;

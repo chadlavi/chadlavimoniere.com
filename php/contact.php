@@ -1,6 +1,8 @@
 <?php
 $config = parse_ini_file(realpath('/root/email.ini'));
 
+$email = $name = $message = '';
+
 if (isset($_REQUEST['submitted'])) {
     $errors = array();
    
