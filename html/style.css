@@ -124,7 +124,6 @@ div.navwrap div.nav ul li {
 
 
 div.container {
-    width: 820px;
     max-width: 90vw;
     margin: 40px auto;
     margin-bottom: 100px;
@@ -214,8 +213,10 @@ div.container form .reset {
 .article code { 
     font-family: monospace;
     background: #eee;
-    margin: 1em auto;
+    margin: 1em 0;
     padding: 10px 15px 25px 15px;
+    max-width: 100%;
+    width: 800px;
     max-height: 1000px;
     overflow: scroll;
     border-radius: 3px;
@@ -235,6 +236,7 @@ a {
 div.container>ul>li {
     position: relative;
     overflow: hidden;
+    flex: auto;
 }
 
 div.container>ul>li>div.background {
@@ -279,6 +281,8 @@ div.container>ul>li>a:hover, .container ul li a:active {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container ul li {
