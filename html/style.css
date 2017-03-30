@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One:400|Khula:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:700|Khula:300,400,400i,700');
 
 /*mobile styles*/
 
@@ -37,17 +37,18 @@ and (orientation: portrait) {
         height: 55vh;
         font-size: 1.25em;
     }
-    .article-page .container {
+    body.article-page>div.container {
         margin-top: 40px;
         width: 96vw;
         max-width: 96vw;
     }
     .article-page .container h1 {
-        font-size: 4.25em; 
+        font-size: 3.5em; 
         margin: 0px auto;
     }
     .article-page .container h1+h3 {
-        font-size: 2.25em;
+        font-size: 2.5em;
+        font-weight: lighter;
         margin: 10px 0px;
     }
     .article-page .container .article p {
@@ -76,6 +77,11 @@ and (orientation: portrait) {
 }
 
 /*normal styles*/
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -webkit-appearance: none;
+}
 
 body {
     font-family: 'Khula', sans-serif;
@@ -187,6 +193,9 @@ div.container form button.submit {
     border-radius: 0px;
     background: #4F9D69;
     color: white;
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 14px;
     box-shadow: none;
     border: none;
     padding: 10px;
@@ -234,6 +243,7 @@ div.container form .reset {
 a {
     color: inherit;
     text-decoration: none;
+    word-wrap: break-word;
 }
 
 div.container>ul>li {
@@ -265,7 +275,7 @@ div.container>ul>li>a:hover, .container ul li a:active {
     background: hsla(120, 0%, 0%, 0.85);
 }
 
-body.article-page>div.container {
+body.article-page .container {
     width: 800px;
 }
 
@@ -307,12 +317,15 @@ body.article-page>div.container {
     box-sizing: border-box;
 }
 
-.container ul li > a {
+.list .container ul li > a {
     z-index: 1;
     width: 100%;
     padding: 20px;
     background: hsla(120, 0%, 0%, 0.5);
     color: #ffffff;
+    font-family: 'PT Sans';
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 h1 + h3 {
@@ -324,6 +337,6 @@ h1 + h3 {
 h1 {
     font-size: 40px;
     color: #555555;
-    font-family: 'Fjalla One';
+    font-family: 'PT Sans';
     text-transform: capitalize;
 }
