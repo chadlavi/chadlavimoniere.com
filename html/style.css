@@ -220,7 +220,6 @@ div.container form .reset {
     margin: 1em 0;
     padding: 10px 15px 25px 15px;
     max-width: 100%;
-    width: 800px;
     max-height: 1000px;
     overflow: scroll;
     border-radius: 3px;
@@ -264,6 +263,10 @@ div.container>ul>li>a:hover+div.background {
 
 div.container>ul>li>a:hover, .container ul li a:active {
     background: hsla(120, 0%, 0%, 0.85);
+}
+
+body.article-page>div.container {
+    width: 800px;
 }
 
 .article-page .container a {
