@@ -1,7 +1,10 @@
+Options +FollowSymLinks
 RewriteEngine on
 RewriteBase /
 RewriteRule ^$ /index.php
 RewriteRule ^contact$ /contact.php
 RewriteRule ^about$ /about.php
-RewriteRule ^search\/(.*)$ /search\.php\?q\=$1 [L]
+RewriteCond %{QUERY_STRING} ^search=(.*)$
+RewriteRule ^(.*)$ /search/%1? [R=301,L]
+RewriteRule ^search\/(.+)$ /search\.php\?q\=$1 [L]
 RewriteRule ^article\/(\d+).*$ /article\.php\?article\=$1 [L]

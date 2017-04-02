@@ -80,6 +80,7 @@ and (orientation: portrait) {
 
 * {
     -webkit-font-smoothing: antialiased;
+    -webit-text-size-adjust: 100%;
     -webkit-appearance: none;
 }
 
@@ -128,6 +129,43 @@ div.navwrap div.nav ul li {
     font-weight: 200;
 }
 
+.nav .search {
+    position: absolute;
+    right: 1vw;
+    top: 12%;
+    height: 75%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.nav .search .search-box {
+    height: 100%;
+    width: 370px;
+    margin: 0px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: none;
+    vertical-align: middle;
+    font-size: 1em;
+    padding-bottom: 1px;
+    padding-left: 0.5em;
+}
+
+.nav .search .submit-button {
+    height: 100%;
+    border: none;
+    color: white;
+    background-color: green;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 900;
+    padding: 0px 0.5em;
+    box-sizing: border-box;
+    vertical-align: middle;
+    font-size: 1em;
+    font-family: fontawesome;
+}
 
 div.container {
     max-width: 90vw;
@@ -141,6 +179,11 @@ body.list>div.container {
 
 body.list>div.container>p.search-title {
     text-align: center;
+    line-height: 1.2em;
+}
+
+body.list>div.container>p.search-title a {
+    color: #4F9D69;
 }
 
 div.article {
