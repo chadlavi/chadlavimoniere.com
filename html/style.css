@@ -138,6 +138,7 @@ div.navwrap div.nav ul li {
     padding: 0px;
     box-sizing: border-box;
     resize: none;
+    font-weight: lighter;
 }
 
 .nav .search .search-box {
