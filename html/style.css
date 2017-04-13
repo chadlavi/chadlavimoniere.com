@@ -183,8 +183,10 @@ body.list>div.container>p.search-title {
     line-height: 1.2em;
 }
 
-body.list>div.container>p.search-title a {
+body.list>div.container>a.clear-results {
     color: #4F9D69;
+    margin-right: 0.5em;
+    float: right;
 }
 
 div.article {

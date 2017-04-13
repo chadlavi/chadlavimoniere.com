@@ -3,10 +3,7 @@ echo'<div class="navwrap">
     <div class="nav">
         <ul>
             <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/about">About</a>
+                <a href="/">Chad Lavimoniere</a>
             </li>
             <li>
                 <a href="/contact">Contact</a>
