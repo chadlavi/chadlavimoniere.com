@@ -1,5 +1,6 @@
 <?php
-echo'<div class="navwrap">
+echo '<!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PHQGJWR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
+<div class="navwrap">
     <div class="nav">
         <ul>
             <li>

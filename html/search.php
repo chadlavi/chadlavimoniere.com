@@ -23,8 +23,7 @@ if ($result) {
     if ($count == 1) {
         echo '<p class="search-title">1 result for <i><b>' . $input . '</b></i></p><a class="clear-results" href="/"><i class="fa fa-times"></i> clear search results</a><ul>';
     } else {
-        echo '<p class="search-title">' . $count . ' results for <i><b>' . $input . '</b></i><br>
-<a href="/">clear search</a></p><ul>';
+        echo '<p class="search-title">' . $count . ' results for <i><b>' . $input . '</b></i></p><a class="clear-results" href="/"><i class="fa fa-times"></i> clear search results</a><ul>';
     } 
     while ($row = mysqli_fetch_assoc($result)) {
         echo '<li style="background-image: url(' . $row['image_url'] . ')"><a href="/article/' . $row['id'] . '/' . seoUrl($row['name']) . '">' . $row['name'] . '</a></li>';

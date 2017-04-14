@@ -1,7 +1,7 @@
 <?php
 include '../php/gzip.php';
 include '../php/connect.php';
-$title = 'Case Studies';
+$title = 'Chad Lavimoniere';
 $meta = 'Case studies in User Experience design';
 include '../php/header.php';
 include '../php/seoURL.php';

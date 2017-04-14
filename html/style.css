@@ -79,6 +79,9 @@ and (orientation: portrait) {
     .article-page .container .contact .error h3, .article-page .container .contact .success h3 {
         font-size: 3em;
     }
+    h2 {
+        font-size: 3em;
+    }
 }
 
 /*normal styles*/
@@ -379,15 +382,27 @@ body.article-page .container {
     letter-spacing: -0.02em;
 }
 
+h1, h2, h3, h4, h5 {
+    color: #555555;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'PT Sans';
+    text-transform: capitalize;
+}
+
 h1 + h3 {
     margin: -20px 0px 0px 0px;
     font-size: 15px;
     font-weight: normal;
 }
 
-h1 {
-    font-size: 40px;
-    color: #555555;
-    font-family: 'PT Sans';
-    text-transform: capitalize;
+
+h2 {
+    margin: 30px 0px 0px 0px;
+}
+
+h2 + p {
+    margin-top: 0px;
 }
