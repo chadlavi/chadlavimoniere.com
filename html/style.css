@@ -22,10 +22,11 @@ and (orientation: portrait) {
     }
     body div.navwrap div.nav ul li {
         margin: 0px 20px 0px 10px;
+        font-size: 45px;
     }
     
     body .nav .search .search-box {
-        width: 270px;
+        width: 250px;
     }
 
     body.list>div.container {
@@ -44,10 +45,11 @@ and (orientation: portrait) {
     }
 
     body.article-page>div.container {
-        margin-top: 40px;
-        width: 96vw;
-        max-width: 96vw;
+        margin-top: 10vw;
+        width: 80vw;
+        max-width: 80vw;
     }
+
     .article-page .container h1 {
         font-size: 3.5em; 
         margin: 0px auto;
@@ -136,6 +138,7 @@ div.navwrap div.nav ul {
 div.navwrap div.nav ul li {
     margin: 0px 10px;
     font-weight: 200;
+    font-size: 18px;
 }
 
 .nav .search {
@@ -152,7 +155,7 @@ div.navwrap div.nav ul li {
 
 .nav .search .search-box {
     height: 100%;
-    width: 370px;
+    width: 200px;
     margin: 0px;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -178,9 +181,10 @@ div.navwrap div.nav ul li {
 }
 
 div.container {
-    max-width: 90vw;
+    max-width: 80vw;
     margin: 40px auto;
     margin-bottom: 100px;
+    font-size: 18px;
 }
 
 body.list>div.container {
