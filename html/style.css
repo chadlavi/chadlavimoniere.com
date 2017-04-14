@@ -23,6 +23,11 @@ and (orientation: portrait) {
     body div.navwrap div.nav ul li {
         margin: 0px 20px 0px 10px;
     }
+    
+    body .nav .search .search-box {
+        width: 270px;
+    }
+
     body.list>div.container {
         font-size: 3em;
         margin: 25px 0px 0px 0px;
