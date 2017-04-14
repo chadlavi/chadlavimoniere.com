@@ -42,6 +42,7 @@ and (orientation: portrait) {
         height: 55vh;
         font-size: 1.25em;
     }
+
     body.article-page>div.container {
         margin-top: 40px;
         width: 96vw;
@@ -56,7 +57,7 @@ and (orientation: portrait) {
         font-weight: lighter;
         margin: 10px 0px;
     }
-    .article-page .container .article p {
+    .article-page .container .article p, .article-page .container .article ul * {
         font-size: 2.5em;
     }
     .article-page .container .article code {
@@ -325,7 +326,7 @@ div.container>ul>li>a:hover+div.background {
     transform: scale(1.02);
 }
 
-div.container>ul>li>a:hover, .container ul li a:active {
+.list div.container>ul>li>a:hover, .list .container ul li a:active {
     background: hsla(120, 0%, 0%, 0.85);
 }
 
@@ -345,7 +346,7 @@ body.article-page .container {
 .article-page .container a:hover, .article-page .container a:active {
     text-decoration: underline;
 }
-.container ul {
+.list .container ul {
     list-style: none;
     text-transform: capitalize;
     width: 100%;
@@ -356,7 +357,7 @@ body.article-page .container {
     flex-wrap: wrap;
 }
 
-.container ul li {
+.list .container ul li {
     width: 400px;
     height: 400px;
     margin: 0px 5px 10px 5px;
@@ -380,6 +381,11 @@ body.article-page .container {
     font-family: 'PT Sans';
     font-weight: 700;
     letter-spacing: -0.02em;
+}
+
+.article-page .container .article ul li {
+    line-height: 1.5;
+    font-weight: 300;
 }
 
 h1, h2, h3, h4, h5 {
