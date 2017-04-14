@@ -69,11 +69,11 @@ and (orientation: portrait) {
         font-size: 2em;
         width: 100%;
     }
-    .article-page .container .contact form input, .article-page .container .contact form textarea {
-        font-size: 1.5rem;
+    .article-page .container .contact form input, .article-page .container .contact form textarea, .article-page .container .contact label {
+        font-size: 45px;
     }
     .article-page .container .contact form .submit, .article-page .container .contact form .reset {
-        font-size: 2em;
+        font-size: 45px;
         padding: 30px;
     }
     .article-page .container .contact .error, .article-page .container .contact .success {
@@ -240,6 +240,7 @@ div.container form .field {
     padding: 0.75em;
     box-sizing: border-box;
     resize: none;
+    font-size: 18px;
 }
 
 input:focus, textarea:focus {
