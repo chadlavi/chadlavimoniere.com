@@ -12,10 +12,7 @@ if ($result = $mysqli->query("SELECT id, name, image_url from article order by u
     echo '<div class="container">';
     echo '<ul>';
     while ($row = mysqli_fetch_assoc($result)) {
-        echo '<li>
-		<a href="/article/' . $row['id'] . '/' . seoUrl($row['name']) . '">' . $row['name'] . '</a>
-		<div class="background"><img src="' . $row['image_url'] . '"></div>
-		</li>';
+        include '../php/list.php';
     }
     echo '</ul>';
     $result->close();
