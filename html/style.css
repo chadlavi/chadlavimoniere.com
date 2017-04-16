@@ -279,6 +279,14 @@ div.container form .reset {
     display: flex;
 }
 
+.article img + p.subtitle {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 40px;
+}
+
 .article p {
     line-height: 1.5;
     font-weight: 300;
