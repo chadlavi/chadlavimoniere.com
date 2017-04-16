@@ -9,19 +9,19 @@ and (orientation: portrait) {
     body.list, body.article-page {
         font-size: 45px;
         width: 100%;
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
     }
     body div.navwrap {
         height: 105px;
     }
     body>div.navwrap>div.nav {
         padding-top: 15px;
-        box-shadow: 0px 2px 5px hsla(0, 0%, 0%, 0.2);
+        box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.2);
         box-sizing: border-box;
     }
     body div.navwrap div.nav ul li {
-        margin: 0px 20px 0px 10px;
+        margin: 0 20px 0 10px;
         font-size: 45px;
     }
     
@@ -33,7 +33,7 @@ and (orientation: portrait) {
     }
 
     body.list>div.container {
-        margin: 25px 0px 0px 0px;
+        margin: 25px 0 0 0;
         width: 100%;
         max-width: 100vw;
     }
@@ -41,7 +41,7 @@ and (orientation: portrait) {
     body.list>div.container ul li {
         width: 100%;
         max-width: 100%;
-        margin: 0px 0px 10px 0px;
+        margin: 0 0 10px 0;
         height: 55vh;
         font-size: inherit;
     }
@@ -53,13 +53,13 @@ and (orientation: portrait) {
     }
 
     .article-page .container h1 {
-        margin: 0px auto;
+        margin: 0 auto;
         font-size: 1.5em;
     }
     .article-page .container h1+h3 {
         font-weight: lighter;
         font-size: 1em;
-        margin: 10px 0px;
+        margin: 10px 0;
     }
     .article-page .container h2 {
         font-size: 1.1em;
@@ -85,27 +85,22 @@ and (orientation: portrait) {
     -webkit-font-smoothing: antialiased;
     -webit-text-size-adjust: 100%;
     -webkit-appearance: none;
+    -moz-appearance: none;
     -moz-osx-font-smoothing: grayscale;
 }
 
 body {
     font-family: 'Khula', sans-serif;
     font-size: 18px;
-    margin: 0px;
+    margin: 0;
     color: #000000;
     background-color: #ffffff;
-}
-
-body.list {
-}
-
-body.article-page {
 }
 
 div.navwrap {
     width: 100%;
     top: 0;
-    margin: 0px;
+    margin: 0;
     height: 40px;
 }
 
@@ -114,12 +109,12 @@ div.navwrap div.nav {
     position: fixed;
     width: 100%;
     background: hsla(0, 100%, 100%, 0.95);
-    box-shadow: 0px 1px 2px hsla(0, 0%, 0%, 0.1);
+    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1);
     z-index: 3;
 }
 
 div.navwrap div.nav ul {
-    margin: 0px;
+    margin: 0;
     padding: 10px;
     height: 100%;
     width: 100%;
@@ -129,7 +124,7 @@ div.navwrap div.nav ul {
 }
 
 div.navwrap div.nav ul li {
-    margin: 0px 10px;
+    margin: 0 10px;
     font-weight: 200;
 }
 
@@ -138,8 +133,8 @@ div.navwrap div.nav ul li {
     right: 1vw;
     top: 12%;
     height: 75%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     resize: none;
     font-weight: lighter;
@@ -148,7 +143,7 @@ div.navwrap div.nav ul li {
 .nav .search .search-box {
     height: 100%;
     width: 200px;
-    margin: 0px;
+    margin: 0;
     border: 1px solid #ccc;
     box-sizing: border-box;
     resize: none;
@@ -163,9 +158,8 @@ div.navwrap div.nav ul li {
     border: none;
     color: white;
     background-color: #4F9D69;
-    font-family: "PT Sans", sans-serif;
     font-weight: 900;
-    padding: 0px 0.5em;
+    padding: 0 0.5em;
     box-sizing: border-box;
     vertical-align: middle;
     font-size: 1em;
@@ -180,14 +174,14 @@ div.container {
 
 body.list>div.container {
     max-width: calc(100vw - 10px);
-    margin: 10px auto 0px auto;}
+    margin: 10px auto 0 auto;}
 
-body.list>div.container>p.search-title {
+body.list>div.container>.search-title {
     text-align: center;
     line-height: 1.2em;
 }
 
-body.list>div.container>a.clear-results {
+body.list>div.container>.clear-results {
     color: #4F9D69;
     margin-right: 0.5em;
     float: right;
@@ -203,7 +197,7 @@ div.container div.error {
     color: red;
     padding: 20px;
     box-sizing: border-box;
-    margin: 20px 0px;
+    margin: 20px 0;
     width: 400px;
     max-width: 100%;
 }
@@ -213,7 +207,7 @@ div.container div.success {
     color: green;
     padding: 20px;
     box-sizing: border-box;
-    margin: 20px 0px;
+    margin: 20px 0;
     width: 400px;
     max-width: 100%;
 }
@@ -227,8 +221,8 @@ div.container div.success {
 }
 
 .success *, .error * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 div.container form .field {
@@ -249,7 +243,7 @@ input:focus, textarea:focus {
 div.container form button.submit {
     max-width: 100%;
     min-width: 25%;
-    border-radius: 0px;
+    border-radius: 0;
     background: #4F9D69;
     color: white;
     font-family: 'PT Sans';
@@ -266,14 +260,14 @@ div.container form .reset {
     background: none;
     border: none;
     color: #4F9D69;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     cursor: pointer;
 }
 
 .article img {
     max-width: 100%;
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
 }
 
@@ -366,8 +360,8 @@ body.article-page .container {
     list-style: none;
     text-transform: capitalize;
     width: 100%;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -388,7 +382,7 @@ body.article-page .container {
 .list .container ul li {
     width: 400px;
     height: 400px;
-    margin: 0px 5px 10px 5px;
+    margin: 0 5px 10px 5px;
     display: inline-flex;
     color: #000000;
     font-size: 20px;
@@ -436,16 +430,16 @@ h1 {
 }
 
 h1 + h3 {
-    margin: -20px 0px 0px 0px;
+    margin: -20px 0 0 0;
     font-size: 15px;
     font-weight: normal;
 }
 
 
 h2 {
-    margin: 30px 0px 0px 0px;
+    margin: 30px 0 0 0;
 }
 
 h2 + p {
-    margin-top: 0px;
+    margin-top: 0;
 }
