@@ -2,6 +2,7 @@
 include '../php/gzip.php';
 include '../php/connect.php';
 include '../php/timezone.php';
+include '../php/lib_autolink.php';
 $id = $_GET['article'];
 
 if (isset($_GET['article'])){
@@ -14,7 +15,7 @@ if (isset($_GET['article'])){
             echo '<body class="article-page">';
             include '../php/nav.php';
             echo '<div class="container">';
-            echo '<h1>' . $row['name'] . '</h1><h3>Posted ' . timezone($row['updated']) . '</h3> <div class="article">' . $row['body'] . '</div>';
+            echo '<h1>' . $row['name'] . '</h1><h3>Posted ' . timezone($row['updated']) . '</h3> <div class="article">' . autolink($row['body']) . '</div>';
         }
         $result->close();
     } else {
