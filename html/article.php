@@ -15,7 +15,7 @@ if (isset($_GET['article'])){
             echo '<body class="article-page">';
             include '../php/nav.php';
             echo '<div class="container">';
-            echo '<h1>' . $row['name'] . '</h1><h3>Posted ' . timezone($row['updated']) . '</h3> <div class="article">' . autolink($row['body']) . '</div>';
+            echo '<h1>' . $row['name'] . '</h1><h3>Posted ' . timezone($row['updated']) . '</h3> <div class="article">' . autolink($row['body'], 100) . '</div>';
         }
         $result->close();
     } else {
