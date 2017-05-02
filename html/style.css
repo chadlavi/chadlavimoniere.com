@@ -46,6 +46,9 @@ and (orientation: portrait) {
         font-size: inherit;
     }
 
+    body.article-page>div.masthead {
+        display: none;
+    }
     body.article-page>div.container {
         margin-top: 10vw;
         width: 80vw;
