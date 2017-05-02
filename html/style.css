@@ -47,7 +47,8 @@ and (orientation: portrait) {
     }
 
     body.article-page>div.masthead {
-        display: none;
+        background-position: scroll;
+        background-size: 100vw;
     }
     body.article-page>div.container {
         margin-top: 10vw;
