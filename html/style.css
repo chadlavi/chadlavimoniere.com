@@ -435,7 +435,7 @@ body.article-page .container {
     padding-left: 2em;
 }
 .article-page  .article ul>li:before {
-    content: '—';
+    content: " \2014";
     position: absolute;
     margin-left: -1.5em;
 }
