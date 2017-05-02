@@ -3,6 +3,7 @@ include '../php/gzip.php';
 include '../php/connect.php';
 $title = 'Chad Lavimoniere';
 $meta = 'Case studies in User Experience design';
+$keywords = 'UX, User Experience Design, Web Design, prototyping';
 include '../php/header.php';
 include '../php/seoURL.php';
 

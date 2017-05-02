@@ -9,6 +9,7 @@ if (empty($_GET['q'])) {
 $input = preg_replace('/[^a-zA-Z0-9\s]+/', '', str_replace('%20', ' ', $_GET['q']));
 $title = 'Search results for "' . $input . '"';
 $meta = 'Case studies related to ' . $input;
+$keywords = 'UX, User Experience Design, Web Design, prototyping';
 $term = strtolower($input);
 include '../php/header.php';
 $query = "select id, name, image_url, nameOccurrences+bodyOccurrences as weightedScore from ( SELECT p.id, p.name, p.image_url, SUM(((LENGTH(p.name) - LENGTH(REPLACE(lower(p.name), '{$term}', '')))/(LENGTH('{$term}')/2))) AS nameOccurrences, SUM(((LENGTH(p.body) - LENGTH(REPLACE(lower(p.body), '{$term}', '')))/(LENGTH('{$term}')/1))) AS bodyOccurrences FROM article AS p GROUP BY p.id ORDER BY nameOccurrences DESC, bodyOccurrences DESC) x WHERE nameOccurrences+bodyOccurrences > 0 ORDER BY weightedScore DESC, id DESC;";
