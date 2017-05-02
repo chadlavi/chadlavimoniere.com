@@ -9,7 +9,7 @@ echo '<!DOCTYPE html>
   <script src="https://use.fontawesome.com/4cbdfa5ae9.js"></script>
   <link rel="stylesheet" type="text/css" href="/style.css">
   <meta name="description" content="' . $meta . '">
-  <meta name="keywords" content="UX, User Experience Design, Web Design, prototyping">
+  <meta name="keywords" content="' . $keywords . '">
   <meta name="author" content="Chad Lavimoniere">
   <title>' . $title . '</title>
 </head>';

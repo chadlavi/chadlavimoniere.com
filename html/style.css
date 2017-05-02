@@ -285,6 +285,15 @@ div.container form .reset {
     font-weight: 300;
 }
 
+.article blockquote {
+    font-weight: 300;
+    font-size: 110%;
+    font-style: italic;
+    border-left: 25px solid hsla(0, 0%, 83%, 0.5);
+    padding-left: 25px;
+    margin-bottom: 2em;
+}
+
 .article code { 
     font-family: "Menlo", monospace;
     font-size: 0.85em;
@@ -345,8 +354,7 @@ body.article-page .container {
 }
 
 .article-page .container a {
-    text-decoration: none;
-    color: #4F9D69;
+    text-decoration: underline;
 }
 
 .article-page .container a:hover, .article-page .container a:active, div.navwrap div.nav ul li a:hover {
@@ -404,6 +412,19 @@ body.article-page .container {
     letter-spacing: -0.02em;
 }
 
+.article-page div.masthead {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    max-height: 35vh;
+    overflow: hidden;
+    background-color: #4F9D69;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .article-page .container .article ul li {
     line-height: 1.5;
     font-weight: 300;
@@ -414,9 +435,9 @@ body.article-page .container {
     padding-left: 2em;
 }
 .article-page  .article ul>li:before {
-    content: '~';
+    content: '—';
     position: absolute;
-    margin-left: -1em;
+    margin-left: -1.5em;
 }
 
 h1, h2, h3, h4, h5 {

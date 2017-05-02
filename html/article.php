@@ -11,9 +11,13 @@ if (isset($_GET['article'])){
         while ($row = mysqli_fetch_assoc($result)) {
             $title = $row['name'];
             $meta = $row['meta'];
+            $keywords = $row['keywords'];
             include '../php/header.php';
             echo '<body class="article-page">';
             include '../php/nav.php';
+            if (!empty($row['image_url'])) {
+                echo '<div class="masthead" style="background-image: url(\'' . $row['image_url'] . '\');"></div>';
+            }
             echo '<div class="container">';
             echo '<h1>' . $row['name'] . '</h1><h3>Posted ' . timezone($row['updated']) . '</h3> <div class="article">' . autolink($row['body'], 100) . '</div>';
         }
