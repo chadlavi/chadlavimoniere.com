@@ -44,7 +44,7 @@ if (isset($_REQUEST['submitted'])) {
         echo '</div>';
     } else {
         echo '<div class="success"><h3>Message Sent!</h3><p>Thanks for getting in touch!</p></div>'; 
-        $from = "From: '" . $name . "' <" . $email . ">\r\nReply-to: " . $email . "";
+        $from = "From: '" . $name . "' <" . $config['from'] . ">\r\nReply-to: " . $email . "";
         $to = $config['to']; 
         $subject = 'contact from ' . $name . '';
         $body = $message;
