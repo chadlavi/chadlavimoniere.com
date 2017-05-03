@@ -1,90 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Khula:300,400,400i,700');
 
-/*mobile styles*/
-
-@media only screen 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) { 
-    body.list, body.article-page {
-        font-size: 45px;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    body div.navwrap {
-        height: 105px;
-    }
-    body>div.navwrap>div.nav {
-        padding-top: 15px;
-        box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.2);
-        box-sizing: border-box;
-    }
-    body div.navwrap div.nav ul li {
-        margin: 0 20px 0 10px;
-        font-size: 45px;
-    }
-    
-    body .nav .search {
-        font-size: 40px;
-    }
-    body .nav .search .search-box {
-        width: 250px;
-    }
-
-    body.list>div.container {
-        margin: 25px 0 0 0;
-        width: 100%;
-        max-width: 100vw;
-    }
-
-    body.list>div.container ul li {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 0 10px 0;
-        height: 55vh;
-        font-size: inherit;
-    }
-
-    body.article-page>div.masthead {
-        background-position: scroll;
-        background-size: 100vw;
-    }
-    body.article-page>div.container {
-        margin-top: 10vw;
-        width: 80vw;
-        max-width: 80vw;
-    }
-
-    .article-page .container h1 {
-        margin: 0 auto;
-        font-size: 1.5em;
-    }
-    .article-page .container h1+h3 {
-        font-weight: lighter;
-        font-size: 1em;
-        margin: 10px 0;
-    }
-    .article-page .container h2 {
-        font-size: 1.1em;
-    }
-    .article-page .container .contact form * {
-        width: 100%;
-    }
-    .article-page .container .contact form input, .article-page .container .contact form textarea, .article-page .container .contact label {
-        font-size: 45px;
-    }
-    .article-page .container .contact form .submit, .article-page .container .contact form .reset {
-        font-size: 45px;
-        padding: 30px;
-    }
-    .article-page .container .contact .error, .article-page .container .contact .success {
-        width: 100%;
-    }
-}
-
-/*normal styles*/
-
 * {
     -webkit-font-smoothing: antialiased;
     -webit-text-size-adjust: 100%;
@@ -128,7 +43,7 @@ div.navwrap div.nav ul {
 }
 
 div.navwrap div.nav ul li {
-    margin: 0 10px;
+    margin: 0 10px 0 0;
     font-weight: 200;
 }
 
@@ -147,6 +62,7 @@ div.navwrap div.nav ul li {
 .nav .search .search-box {
     height: 100%;
     width: 200px;
+    max-width: 25vw;
     margin: 0;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -171,7 +87,7 @@ div.navwrap div.nav ul li {
 }
 
 div.container {
-    max-width: 80vw;
+    max-width: 90vw;
     margin: 40px auto;
     margin-bottom: 100px;
 }
@@ -291,11 +207,11 @@ div.container form .reset {
 
 .article blockquote {
     font-weight: 300;
-    font-size: 103%;
-    font-style: italic;
+    font-size: 93%;
     border-left: 25px solid hsla(0, 0%, 83%, 0.5);
-    padding-left: 25px;
-    margin-bottom: 2em;
+    padding: 25px;
+    margin: 2em 0 2em 5px;
+    background: #f9f9f9;
 }
 
 .article code { 
@@ -304,18 +220,21 @@ div.container form .reset {
     color: #555;
     background: #eee;
     margin: 0 0 1em 0;
-    padding: 10px 25px 15px 15px;
+    padding: 15px 25px 15px 15px;
     max-width: 100%;
-    max-height: 1000px;
+    max-height: 500em;
     overflow: scroll;
-    overflow-wrap: break-word;
     border-radius: 3px;
     box-sizing: border-box;
-    white-space: pre;
+    white-space: pre-wrap;
     display: inline-block;
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;
+}
+
+.article code.fixed {
+    white-space: pre;
 }
 
 a {
@@ -420,13 +339,19 @@ body.article-page .container {
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 200px;
-    max-height: 35vh;
-    overflow: hidden;
+    height: 400px;
     background-color: #4F9D69;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    position: fixed;
+    z-index: -1;
+}
+
+.article-page div.masthead img {
+    width: 100%;
+}
+.article-page div.envelope {
+    background: white;
+    padding: 40px 0 0 0;
+    margin: 200px 0 0 0;
 }
 
 .article-page .container .article ul li {
@@ -449,14 +374,12 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 40px;
     font-family: 'PT Sans';
     text-transform: capitalize;
 }
 
-h1 + h3 {
+h1 + h4 {
     margin: -20px 0 0 0;
-    font-size: 15px;
     font-weight: normal;
 }
 
@@ -465,6 +388,13 @@ h2 {
     margin: 30px 0 0 0;
 }
 
-h2 + p {
+h2 + p, h3 + p {
     margin-top: 0;
+}
+
+.article h3 {
+    margin-bottom: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -.15px;
 }
