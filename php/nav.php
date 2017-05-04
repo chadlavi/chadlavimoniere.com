@@ -11,8 +11,7 @@ echo '<!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.
             </li>
         </ul>
         <form class="search" action=" ">
-            <input class="search-box" type="text" name="search" placeholder="Search" required>
-            <input class="submit-button" type="submit" value="&#xf002;">
+            <input class="search-box" type="text" name="search" placeholder="Search" required><input class="submit-button" type="submit" value="&#xf002;">
         </form>
     </div>
 </div>';

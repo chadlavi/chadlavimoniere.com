@@ -6,6 +6,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     -moz-osx-font-smoothing: grayscale;
+    border-radius: 0;
 }
 
 body {
@@ -49,7 +50,7 @@ div.navwrap div.nav ul li {
 
 .nav .search {
     position: absolute;
-    right: 1vw;
+    right: 10px;
     top: 12%;
     height: 75%;
     margin: 0;
@@ -65,10 +66,11 @@ div.navwrap div.nav ul li {
     max-width: 25vw;
     margin: 0;
     border: 1px solid #ccc;
+    border-right: none;
     box-sizing: border-box;
     resize: none;
     vertical-align: middle;
-    font-size: 1em;
+    font-size: 14px;
     padding-bottom: 1px;
     padding-left: 0.5em;
 }
@@ -78,11 +80,10 @@ div.navwrap div.nav ul li {
     border: none;
     color: white;
     background-color: #4F9D69;
-    font-weight: 900;
-    padding: 0 0.5em;
-    box-sizing: border-box;
+    padding: 0 0.65em;
+    margin: 0;
+    font-size: 14px;
     vertical-align: middle;
-    font-size: 1em;
     font-family: fontawesome;
 }
 
@@ -102,9 +103,13 @@ body.list>div.container>.search-title {
 }
 
 body.list>div.container>.clear-results {
-    color: #4F9D69;
-    margin-right: 0.5em;
-    float: right;
+    background-color: #4F9D69;
+    color: white;
+    margin: 0 auto 1em auto;
+    width: 200px;
+    text-align: center;
+    display: block;
+    padding: 5px 5px 0px 5px;
 }
 
 div.article {
@@ -340,7 +345,6 @@ body.article-page .container {
     margin: 0;
     padding: 0;
     height: 400px;
-    background-color: #4F9D69;
     position: fixed;
     z-index: -1;
 }
