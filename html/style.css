@@ -345,6 +345,7 @@ body.article-page .container {
     margin: 0;
     padding: 0;
     height: 400px;
+    overflow: hidden;
     position: fixed;
     z-index: -1;
 }
