@@ -1,1 +1,4 @@
 language: php
+
+before_install:
+  - sudo apt-get -qq update
