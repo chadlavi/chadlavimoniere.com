@@ -2,7 +2,10 @@
 The source code for my personal portfolio website.
 
 ### Status
-[![Build Status](https://travis-ci.org/chadlavi/chadlavimoniere.com.svg?branch=master)](https://travis-ci.org/chadlavi/chadlavimoniere.com) (master) / [![Build Status](https://travis-ci.org/chadlavi/chadlavimoniere.com.svg?branch=dev)](https://travis-ci.org/chadlavi/chadlavimoniere.com) (dev)
+* master
+    * [![Build Status](https://travis-ci.org/chadlavi/chadlavimoniere.com.svg?branch=master)](https://travis-ci.org/chadlavi/chadlavimoniere.com)
+* dev  
+    * [![Build Status](https://travis-ci.org/chadlavi/chadlavimoniere.com.svg?branch=dev)](https://travis-ci.org/chadlavi/chadlavimoniere.com)
 
 ### TODOS
 
