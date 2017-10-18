@@ -1,8 +1,8 @@
 <?php
 
-namespace phpUnitTutorial\Test;
+namespace Test;
 
-class StupidTest extends \PHPUnit_Framework_TestCase {
+class connectTest extends \PHPUnit_Framework_TestCase {
     public function testTrueIsTrue() {
         $foo = true;
         $this->assertTrue($foo);

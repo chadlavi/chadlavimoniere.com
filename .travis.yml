@@ -3,4 +3,4 @@ language: php
 before_install:
   - sudo apt-get -qq update
 
-script: phpunit --testdox ./Test/*
+script: phpunit --testdox phpunit.xml
