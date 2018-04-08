@@ -15,5 +15,6 @@ echo '<!DOCTYPE html>
   <meta name="viewport" content="initial-scale=1.0">
   <title>' . $title . '</title>
 <script src="https://www.google.com/recaptcha/api.js"></script>
+<meta name="p:domain_verify" content="53285d67644c55300f8e387d643f55e9"/>
 </head>';
 ?>
