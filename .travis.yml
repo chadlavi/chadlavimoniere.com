@@ -1,0 +1,11 @@
+language: php
+
+before_install:
+  - sudo apt-get -qq update
+
+script: phpunit --testdox
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
