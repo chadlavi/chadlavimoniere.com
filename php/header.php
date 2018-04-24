@@ -11,10 +11,11 @@ echo '<!DOCTYPE html>
   <meta name="description" content="' . $meta . '">
   <meta name="keywords" content="' . $keywords . '">
   <meta name="author" content="Chad Lavimoniere">
-  <meta name="viewport" content="width=device-width">
-  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:description" content="' . $meta . '">
+  <meta property="og:title" content="' . $title . '">
   <title>' . $title . '</title>
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<meta name="p:domain_verify" content="53285d67644c55300f8e387d643f55e9"/>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <meta name="p:domain_verify" content="53285d67644c55300f8e387d643f55e9"/>
 </head>';
 ?>
