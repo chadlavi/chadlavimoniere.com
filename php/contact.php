@@ -61,7 +61,7 @@ echo '<form action="" method="post">
     <input required class="field" name="name" type="text" placeholder="your name" value="' . $name . '"/><br /></label>
     <label>message: <br/> 
     <textarea required class="field" name="message" placeholder="your message" rows="5" cols="30"/>' . $message . '</textarea><br /></label>
-    <div class="g-recaptcha" data-sitekey="6LdxZSMUAAAAAKoaHPjNw_87O5zF1i71XKZyW94S"></div><br>
+    <div class="g-recaptcha" data-theme="dark" data-sitekey="6LdxZSMUAAAAAKoaHPjNw_87O5zF1i71XKZyW94S"></div><br>
     <button class="submit" name="submitted" type="submit" value="Submit" />Send</button><br>
     </form>';
 

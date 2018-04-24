@@ -1,7 +1,7 @@
 /* VARIABLES */
 :root {
     /* FONTS */
-    --font-name: Hack, Menlo, Monaco, Ubuntu Mono, monospace;
+    --font-name: Monaco, Hack, Menlo, Ubuntu Mono, monospace;
     /*--font-name: 'Khula', sans-serif;*/
 
     /* PAGE COLORS */
@@ -19,6 +19,9 @@
     --tile-color-1: var(--button-color);
     --tile-color-2: #7A83AB;
     --tile-color-3: #E59500;
+
+    /* MEASUREMENTS */
+    --nav-height: 50px;
 }
 
 * {
@@ -42,7 +45,7 @@ div.navwrap {
     width: 100%;
     top: 0;
     margin: 0;
-    height: 40px;
+    height: var(--nav-height);
 }
 
 div.navwrap div.nav {
@@ -51,6 +54,7 @@ div.navwrap div.nav {
     width: 100%;
     background-color: var(--background);
     box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1);
+    border-bottom: 1px solid hsla(1, 100%, 100%, 0.2);
     z-index: 3;
 }
 
@@ -65,15 +69,21 @@ div.navwrap div.nav ul {
 }
 
 div.navwrap div.nav ul li {
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
+    font-size: 20px;
     font-weight: normal;
+}
+
+
+div.navwrap div.nav ul li a *{
+    vertical-align: middle;
 }
 
 .nav .search {
     position: absolute;
     right: 10px;
-    top: 12%;
-    height: 75%;
+    top: 10px;
+    height: 30px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -83,8 +93,7 @@ div.navwrap div.nav ul li {
 
 .nav .search .search-box {
     height: 100%;
-    width: 200px;
-    max-width: 25vw;
+    width: 250px;
     margin: 0;
     border: none;
     color: var(--text-color);
