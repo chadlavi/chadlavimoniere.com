@@ -5,7 +5,7 @@
     /*--font-name: 'Khula', sans-serif;*/
 
     /* PAGE COLORS */
-    --background: black;
+    --background: #000;
     --input-background: #333;
 
     /* TEXT COLORS */
@@ -13,12 +13,16 @@
     --text-color: #ddd;
     --link-color: #fff;
     --link-hover-color: var(--button-color);
+    --placeholder-color: #aaa;
 
     /* OTHER COLORS */
-    --button-color: #4F9D69;
+    /--button-color: #33805a;
+    --button-color: #4CAF50;
     --tile-color-1: var(--button-color);
-    --tile-color-2: #7A83AB;
-    --tile-color-3: #E59500;
+    --tile-color-2: #673AB7;
+    --tile-color-3: #FFC107;
+    --green: green;
+    --red: red;
 
     /* MEASUREMENTS */
     --nav-height: 50px;
@@ -54,7 +58,7 @@ div.navwrap div.nav {
     width: 100%;
     background-color: var(--background);
     box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1);
-    border-bottom: 1px solid hsla(1, 100%, 100%, 0.2);
+    border-bottom: 1px solid var(--input-background);
     z-index: 3;
 }
 
@@ -75,6 +79,10 @@ div.navwrap div.nav ul li {
 }
 
 
+div.navwrap div.nav ul li a {
+    vertical-align: middle;
+}
+
 div.navwrap div.nav ul li a *{
     vertical-align: middle;
 }
@@ -94,6 +102,7 @@ div.navwrap div.nav ul li a *{
 .nav .search .search-box {
     height: 100%;
     width: 250px;
+    max-width: 50vw;
     margin: 0;
     border: none;
     color: var(--text-color);
@@ -104,8 +113,7 @@ div.navwrap div.nav ul li a *{
     vertical-align: middle;
     font-size: 14px;
     font-family: var(--font-name);
-    padding-bottom: 1px;
-    padding-left: 0.5em;
+    padding-left: 10px;
 }
 
 .nav .search .submit-button {
@@ -152,7 +160,7 @@ div.article {
 
 div.container div.error {
     background: hsla(0, 80%, 90%, 1);
-    color: red;
+    color: var(--red);
     padding: 20px;
     box-sizing: border-box;
     margin: 20px 0;
@@ -162,7 +170,7 @@ div.container div.error {
 
 div.container div.success {
     background: hsla(120, 80%, 90%, 1);
-    color: green;
+    color: var(--green);
     padding: 20px;
     box-sizing: border-box;
     margin: 20px 0;
@@ -171,11 +179,21 @@ div.container div.success {
 }
 
 .success h3 {
-    color: green;
+    color: var(--green);
 }
 
 .error h3 {
-    color: red;
+    color: var(--red);
+}
+
+.success h3:before {
+    opacity: 0.2;
+    color: var(--green);
+}
+
+.error h3:before {
+    opacity: 0.2;
+    color: var(--red);
 }
 
 .success *, .error * {
@@ -183,11 +201,15 @@ div.container div.success {
     padding: 0;
 }
 
+.error a {
+    color: var(--red);
+}
+
 div.container form .field {
     max-width: 100%;
     width: 400px;
-    margin-bottom: 10px;
-    border: none;
+    border: 1px solid var(--background);
+    display:block;
     font-family: var(--font-name);
     background-color: var(--input-background);
     color: var(--text-color);
@@ -197,8 +219,33 @@ div.container form .field {
     font-size: inherit;
 }
 
+div.container form label, div.container form .g-recaptcha {
+    display: block;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 0.75em;
+}
+
+div.container form ::placeholder {
+    opacity: 0.25;
+}
+
 input:focus, textarea:focus {
     outline: none;
+}
+
+div.container form .field:focus {
+    border-bottom: 1px solid var(--button-color);
+}
+
+div.container form .field:focus+label {
+    color: var(--button-color);
+}
+
+::placeholder {
+    color: var(--placeholder-color);
 }
 
 div.container form button.submit {
@@ -314,7 +361,7 @@ div.container>ul>li>a:hover+div.background {
 }
 
 .list div.container>ul>li>a:hover, .list .container ul li a:active {
-    background: hsla(120, 0%, 0%, 0.85);
+    background: hsla(120, 0%, 0%, 0.4);
 }
 
 body.article-page .container {
@@ -387,6 +434,8 @@ body.article-page .container {
     overflow: hidden;
     position: fixed;
     z-index: -1;
+    background-size: cover;
+    background-position: center;
 }
 
 .article-page div.masthead img {
@@ -415,14 +464,32 @@ body.article-page .container {
 
 h1, h2, h3, h4, h5 {
     color: var(--header-color);
+    text-transform: uppercase;
 }
 
-h1 {
-    text-transform: capitalize;
+h1:before {
+    content: '#';
+    color: var(--input-background);
+}
+
+h2:before {
+    content: '##';
+    color: var(--input-background);
+}
+
+h3:before {
+    content: '###';
+    color: var(--input-background);
+}
+
+h4:before {
+    content: '####';
+    color: var(--input-background);
 }
 
 h1 + h4 {
-    margin: -20px 0 0 0;
+    margin: -30px 0 0 0;
+    font-size: 0.75em;
     font-weight: normal;
 }
 

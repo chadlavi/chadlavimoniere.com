@@ -54,15 +54,15 @@ if (isset($_REQUEST['submitted'])) {
     }
 }
 
-echo '<form action="" method="post">
-    <label>email address: <br />
-    <input class="field" name="email" autofocus required type="email" placeholder="your email address" value="' . $email . '"/><br /></label>
-    <label>name: <br />
-    <input required class="field" name="name" type="text" placeholder="your name" value="' . $name . '"/><br /></label>
-    <label>message: <br/> 
-    <textarea required class="field" name="message" placeholder="your message" rows="5" cols="30"/>' . $message . '</textarea><br /></label>
-    <div class="g-recaptcha" data-theme="dark" data-sitekey="6LdxZSMUAAAAAKoaHPjNw_87O5zF1i71XKZyW94S"></div><br>
-    <button class="submit" name="submitted" type="submit" value="Submit" />Send</button><br>
+echo '<form id="comtact" action="" method="post">
+    <input class="field" name="email" autofocus required type="email" placeholder="jane@doe.com" value="' . $email . '"/>
+    <label for="email">email address</label>
+    <input required class="field" name="name" type="text" placeholder="Jane Doe" value="' . $name . '"/>
+    <label for="name">name</label>
+    <textarea required class="field" name="message" placeholder="Hi there!" rows="5" cols="30"/>' . $message . '</textarea>
+    <label for="message">message</label>
+    <div class="g-recaptcha" data-theme="dark" data-sitekey="6LdxZSMUAAAAAKoaHPjNw_87O5zF1i71XKZyW94S"></div>
+    <button class="submit" name="submitted" type="submit" value="Submit" />Send</button>
     </form>';
 
 ?>

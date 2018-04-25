@@ -15,7 +15,12 @@ echo '<!DOCTYPE html>
   <meta property="og:description" content="' . $meta . '">
   <meta property="og:title" content="' . $title . '">
   <title>' . $title . '</title>
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("contact").submit();
+    }
+  </script>
   <meta name="p:domain_verify" content="53285d67644c55300f8e387d643f55e9"/>
 </head>';
 ?>
