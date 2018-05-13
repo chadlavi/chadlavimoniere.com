@@ -278,7 +278,7 @@ div.container form .reset {
     display: flex;
 }
 
-.article-page .article img + p.subtitle {
+.article-page .article h6 {
     font-size: 75%;
     font-style: italic;
     text-align: center;
