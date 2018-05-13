@@ -15,6 +15,9 @@ echo '<!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.
             <li>
                 <a href="https://twitter.com/chadlavimoniere" title="twitter" alt="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
             </li>
+            <li>
+                <a href="/resume" title="resume" alt="resume" target="_blank"><i class="far fa-user-circle"></i></a>
+            </li>
         </ul>
         <form class="search" action=" ">
             <input class="search-box" type="text" name="search" placeholder="Search" required><button class="submit-button" type="submit" value="Submit"><i class="fas fa-search"></i></button>
