@@ -5,7 +5,7 @@
     /*--font-name: 'Khula', sans-serif;*/
 
     /* PAGE COLORS */
-    --background: #000;
+    --background: #111;
     --input-background: #333;
 
     /* TEXT COLORS */
@@ -16,11 +16,10 @@
     --placeholder-color: #aaa;
 
     /* OTHER COLORS */
-    /--button-color: #33805a;
-    --button-color: #4CAF50;
-    --tile-color-1: var(--button-color);
-    --tile-color-2: #673AB7;
-    --tile-color-3: #FFC107;
+    --button-color: #229cde;
+    --tile-color-1: #4CAF50;
+    --tile-color-2: #946cda;
+    --tile-color-3: var(--button-color);
     --green: green;
     --red: red;
 
