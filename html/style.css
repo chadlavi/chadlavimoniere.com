@@ -297,9 +297,13 @@ div.container form .reset {
     font-weight: normal;
     font-size: 93%;
     border-left: 25px solid hsla(0, 0%, 83%, 0.5);
-    padding: 25px;
-    margin: 2em 0 2em 5px;
+    padding: 1.5em;
+    margin: 2em 0;
     background: var(--input-background);
+}
+
+.article blockquote>* {
+    margin: 0;
 }
 
 .article code { 
