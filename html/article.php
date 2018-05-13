@@ -9,9 +9,9 @@ if (isset($_GET['article'])){
     $result = $mysqli->query("SELECT * from article where id = {$id}");
     if (mysqli_num_rows($result)==1) {
         while ($row = mysqli_fetch_assoc($result)) {
-            $title = $row['name'] ?: 'Chad Lavimoniere';
-            $meta = $row['meta'] ?: 'Case studies in product design';
-            $keywords = $row['keywords'] ?: 'UX, User Experience Design, Product Design, Web Design, prototyping';
+            $title = $row['name'];
+            $meta = $row['meta'] ?? 'Case studies in product design';
+            $keywords = $row['keywords'] ?? 'UX, User Experience Design, Product Design, Web Design, prototyping';
             include '../php/header.php';
             echo '<body class="article-page">';
             include '../php/nav.php';
