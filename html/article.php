@@ -21,10 +21,10 @@ if (isset($_GET['article'])){
                 #echo '<div class="masthead"><img src="' . $row['image_url'] . '"></div><div class="envelope">';
                 echo '<div class="masthead" style="background-image: url(\'' . $row['image_url'] . '\');"></div><div class="envelope">';
                 echo '<div class="container">';
-                echo '<h1>' . $row['name'] . '</h1><h4>Last updated ' . timezone($row['updated']) . '</h4> <div class="article">' . $Parsedown->text($row['body']) . '</div></div>';
+                echo '<h1>' . $row['name'] . '</h1><h4>Posted ' . timezone($row['created']) . ' - Last updated ' . timezone($row['updated']) . '</h4> <div class="article">' . $Parsedown->text($row['body']) . '</div></div>';
             } else {
                 echo '<div class="container">';
-                echo '<h1>' . $row['name'] . '</h1><h4>Last updated ' . timezone($row['updated']) . '</h4> <div class="article">' . $Parsedown->text($row['body']) . '</div>';
+                echo '<h1>' . $row['name'] . '</h1><h4>Posted ' . timezone($row['created']) . ' - Last updated ' . timezone($row['updated']) . '</h4> <div class="article">' . $Parsedown->text($row['body']) . '</div>';
             }
         }
         $result->close();

@@ -11,6 +11,7 @@ if ($result = $mysqli->query("SELECT id, name, image_url from article order by c
     echo'<body class="list">';
     include '../php/nav.php';
     echo '<div class="container">';
+    echo '<h1>Chad Lavimoniere</h1>';
     echo '<ul>';
     while ($row = mysqli_fetch_assoc($result)) {
         include '../php/list.php';
