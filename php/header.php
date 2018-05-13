@@ -21,6 +21,7 @@ echo '<!DOCTYPE html>
       document.getElementById("contact").submit();
     }
   </script>
-  <meta name="p:domain_verify" content="53285d67644c55300f8e387d643f55e9"/>
-</head>';
+  <meta name="p:domain_verify" content="53285d67644c55300f8e387d643f55e9"/>';
+include '../php/console-logger.php';
+echo'</head>';
 ?>
