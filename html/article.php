@@ -1,9 +1,11 @@
 <?php
+include '../php/parsedown.php';
 include '../php/gzip.php';
 include '../php/connect.php';
 include '../php/timezone.php';
 include '../php/lib_autolink.php';
 $id = $_GET['article'];
+$Parsedown = new Parsedown();
 
 if (isset($_GET['article'])){
     $result = $mysqli->query("SELECT * from article where id = {$id}");
@@ -19,10 +21,10 @@ if (isset($_GET['article'])){
                 #echo '<div class="masthead"><img src="' . $row['image_url'] . '"></div><div class="envelope">';
                 echo '<div class="masthead" style="background-image: url(\'' . $row['image_url'] . '\');"></div><div class="envelope">';
                 echo '<div class="container">';
-                echo '<h1>' . $row['name'] . '</h1><h4>Last updated ' . timezone($row['updated']) . '</h4> <div class="article">' . autolink($row['body'], 100) . '</div></div>';
+                echo '<h1>' . $row['name'] . '</h1><h4>Last updated ' . timezone($row['updated']) . '</h4> <div class="article">' . $Parsedown->text($row['body']) . '</div></div>';
             } else {
                 echo '<div class="container">';
-                echo '<h1>' . $row['name'] . '</h1><h4>Last updated ' . timezone($row['updated']) . '</h4> <div class="article">' . autolink($row['body'], 100) . '</div>';
+                echo '<h1>' . $row['name'] . '</h1><h4>Last updated ' . timezone($row['updated']) . '</h4> <div class="article">' . $Parsedown->text($row['body']) . '</div>';
             }
         }
         $result->close();
