@@ -1,22 +1,25 @@
+ @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,900,900i');
+
 /* VARIABLES */
 :root {
     /* FONTS */
-    --font-name: Monaco, Hack, Menlo, Ubuntu Mono, monospace;
+    --font-name: 'Nunito Sans', Monaco, Hack, Menlo, Ubuntu Mono, monospace;
     /*--font-name: 'Khula', sans-serif;*/
 
     /* PAGE COLORS */
-    --background: #111;
-    --input-background: #333;
+    --background: white;
+    --input-background: #f9f9f9;
 
     /* TEXT COLORS */
     --header-color: var(--text-color);
-    --text-color: #ddd;
-    --link-color: #fff;
+    --text-color: #555;
+    --light-text-color: #bbb;
+    --link-color: #555;
     --link-hover-color: var(--button-color);
     --placeholder-color: #aaa;
 
     /* OTHER COLORS */
-    --button-color: #229cde;
+    --button-color: #209cee;
     --tile-color-1: #4CAF50;
     --tile-color-2: #946cda;
     --tile-color-3: var(--button-color);
@@ -229,7 +232,7 @@ label {
 }
 
 div.container form ::placeholder {
-    opacity: 0.25;
+    opacity: 1;
 }
 
 input:focus, textarea:focus {
@@ -472,30 +475,31 @@ body.article-page .container {
 h1, h2, h3, h4, h5 {
     color: var(--header-color);
     text-transform: uppercase;
+    line-height: 1;
 }
 
 h1:before {
-    content: '#';
-    color: var(--input-background);
+    content: '# ';
+    color: var(--light-text-color);
 }
 
 h2:before {
-    content: '##';
-    color: var(--input-background);
+    content: '## ';
+    color: var(--light-text-color);
 }
 
 h3:before {
-    content: '###';
-    color: var(--input-background);
+    content: '### ';
+    color: var(--light-text-color);
 }
 
 h4:before {
-    content: '####';
-    color: var(--input-background);
+    content: '#### ';
+    color: var(--light-text-color);
 }
 
 h1 + h4 {
-    margin: -2em 0 0 0;
+    margin: -1em 0 0 0;
     font-size: 0.75em;
     font-weight: normal;
 }

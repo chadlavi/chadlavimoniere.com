@@ -61,7 +61,7 @@ echo '<form id="comtact" action="" method="post">
     <label for="name">name</label>
     <textarea required class="field" name="message" placeholder="Hi there!" rows="5" cols="30"/>' . $message . '</textarea>
     <label for="message">message</label>
-    <div class="g-recaptcha" data-theme="dark" data-sitekey="6LdxZSMUAAAAAKoaHPjNw_87O5zF1i71XKZyW94S"></div>
+    <div class="g-recaptcha" data-theme="light" data-sitekey="6LdxZSMUAAAAAKoaHPjNw_87O5zF1i71XKZyW94S"></div>
     <button class="submit" name="submitted" type="submit" value="Submit" />Send</button>
     </form>';
 
