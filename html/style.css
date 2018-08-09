@@ -3,32 +3,53 @@
 /* VARIABLES */
 :root {
     /* FONTS */
-    --font-name: 'Nunito Sans', Monaco, Hack, Menlo, Ubuntu Mono, monospace;
-    /*--font-name: 'Khula', sans-serif;*/
+    --font-name: 'Nunito Sans', Arial, sans-serif;
+
+    /* GENERIC COLORS */
+    --red:               crimson;
+    --orange:            coral;
+    --yellow:            goldenrod;
+    --green:             forestgreen;
+    --blue:              dodgerblue;
+    --violet:            violet;
+    --black:             #555;
+    --grey:              #bbb;
+    --light-grey:        #aaa;
+    --off-white:         #f9f9f9;
+    --white:             white;
 
     /* PAGE COLORS */
-    --background: white;
-    --input-background: #f9f9f9;
+    --background:        var(--white);
+    --input-background:  var(--off-white);
 
     /* TEXT COLORS */
-    --header-color: var(--text-color);
-    --text-color: #555;
-    --light-text-color: #bbb;
-    --link-color: #555;
-    --link-hover-color: var(--button-color);
-    --placeholder-color: #aaa;
+    --header-color:      var(--text-color);
+    --text-color:        var(--black);
+    --light-text-color:  var(--grey);
+    --link-color:        var(--text-color);
+    --link-hover-color:  var(--button-color);
+    --placeholder-color: var(--light-grey);
 
     /* OTHER COLORS */
-    --button-color: #209cee;
-    --tile-color-1: #4CAF50;
-    --tile-color-2: #946cda;
-    --tile-color-3: var(--button-color);
-    --green: green;
-    --red: red;
+    --button-color:      var(--blue);
+    --tile-color-1:      var(--red);
+    --tile-color-2:      var(--orange);
+    --tile-color-3:      var(--yellow);
+    --tile-color-4:      var(--green);
+    --tile-color-5:      var(--blue);
 
     /* MEASUREMENTS */
     --nav-height: 50px;
+    --article-width: 800px;
+    --tile-width: 300px;
+    --tile-height: 200px;
     --line-height: 1.5;
+    --vertical-space: 40px;
+
+    /* FONT SIZES */
+    --body-font-size: 18px;
+    --nav-font-size: 20px;
+    --search-font-size: 14px;
 }
 
 * {
@@ -42,7 +63,7 @@
 
 body {
     font-family: var(--font-name);
-    font-size: 18px;
+    font-size: var(--body-font-size);
     margin: 0;
     color: var(--text-color);
     background-color: var(--background);
@@ -77,7 +98,7 @@ div.navwrap div.nav ul {
 
 div.navwrap div.nav ul li {
     margin: 0 10px 0 0;
-    font-size: 20px;
+    font-size: var(--nav-font-size);
     font-weight: normal;
 }
 
@@ -114,7 +135,7 @@ div.navwrap div.nav ul li a *{
     box-sizing: border-box;
     resize: none;
     vertical-align: middle;
-    font-size: 14px;
+    font-size: var(--search-font-size);
     font-family: var(--font-name);
     padding-left: 10px;
 }
@@ -122,18 +143,18 @@ div.navwrap div.nav ul li a *{
 .nav .search .submit-button {
     height: 100%;
     border: none;
-    color: white;
+    color: var(--white);
     background-color: var(--button-color);
     padding: 0 0.65em;
     margin: 0;
-    font-size: 14px;
+    font-size: var(--search-font-size);
     vertical-align: middle;
     font-family: fontawesome;
 }
 
 div.container {
     max-width: 90vw;
-    margin: 40px auto;
+    margin: var(--vertical-space) auto;
     margin-bottom: 100px;
 }
 
@@ -158,7 +179,7 @@ body.list>div.container>.clear-results {
 
 div.article {
     width: 100%;
-    margin-top: 40px;
+    margin-top: var(--vertical-space);
 }
 
 div.container div.error {
@@ -228,7 +249,7 @@ div.container form label, div.container form .g-recaptcha {
 }
 
 label {
-    font-size: 0.75em;
+    font-size: 75%;
 }
 
 div.container form ::placeholder {
@@ -311,7 +332,7 @@ div.container form .reset {
 
 .article code { 
     font-family: "Menlo", monospace;
-    font-size: 0.85em;
+    font-size: 85%;
     color: var(--text-color);
     background: var(--input-background);
     margin: 0 0 1em 0;
@@ -361,18 +382,19 @@ div.container>ul>li>div.background {
 div.container>ul>li>div.background>img {
     min-width: 100%;
     min-height: 100%;
+    width: 100%;
 }
 
 div.container>ul>li>a:hover+div.background {
     transform: scale(1.02);
 }
 
-.list div.container>ul>li>a:hover, .list .container ul li a:active {
-    background: hsla(120, 0%, 0%, 0.4);
+.list div.container>ul>li>a:hover+.background, .list .container ul li a:active+.background {
+    -webkit-filter: brightness(0.3);
 }
 
 body.article-page .container {
-    width: 800px;
+    width: var(--article-width);
 }
 
 .article-page .container a {
@@ -397,25 +419,32 @@ body.article-page .container {
     flex-wrap: wrap;
 }
 
-.list .container ul li:nth-child(1n+0)  {
+.list .container ul li:nth-child(5n+1)  {
     background-color: var(--tile-color-1);
 }
 
-.list .container ul li:nth-child(2n+0)  {
+.list .container ul li:nth-child(5n+2)  {
     background-color: var(--tile-color-2);
 }
 
-.list .container ul li:nth-child(3n+0)  {
+.list .container ul li:nth-child(5n+3)  {
     background-color: var(--tile-color-3);
 }
 
+.list .container ul li:nth-child(5n+4)  {
+    background-color: var(--tile-color-4);
+}
+
+.list .container ul li:nth-child(5n+5)  {
+    background-color: var(--tile-color-5);
+}
+
 .list .container ul li {
-    width: 400px;
-    height: 400px;
+    width: var(--tile-width);
+    height: var(--tile-height);
     margin: 0 5px 10px 5px;
     display: inline-flex;
-    color: #000000;
-    font-size: 20px;
+    font-size: var(--nav-font-size);
     line-height: 1.3;
     background-position: center;
     background-size: cover;
@@ -427,9 +456,12 @@ body.article-page .container {
     z-index: 1;
     width: 100%;
     padding: 20px;
-    background: hsla(120, 0%, 0%, 0.5);
-    color: #ffffff;
+    color: var(--white);
     letter-spacing: -0.02em;
+}
+
+.list .container ul li > a+.background {
+    -webkit-filter: brightness(0.5);
 }
 
 .article-page div.masthead {
@@ -449,7 +481,7 @@ body.article-page .container {
 }
 .article-page div.envelope {
     background: var(--background);
-    padding: 40px 0;
+    padding: var(--vertical-space) 0;
     margin: 200px 0 0 0;
 }
 
@@ -500,7 +532,7 @@ h4:before {
 
 h1 + h4 {
     margin: -1em 0 0 0;
-    font-size: 0.75em;
+    font-size: 75%;
     font-weight: normal;
 }
 
