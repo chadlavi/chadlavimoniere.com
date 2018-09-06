@@ -49,6 +49,8 @@
     --search-font-size: 14px;
 }
 
+/* GENERIC RULES */
+
 * {
     -webkit-font-smoothing: antialiased;
     -webit-text-size-adjust: 100%;
@@ -61,7 +63,6 @@
 body {
     font-size: var(--body-font-size);
     margin: 0;
-    color: var(--text-color);
     background-color: var(--background);
 }
 
@@ -125,7 +126,6 @@ div.navwrap div.nav ul li a *{
     max-width: 40vw;
     margin: 0;
     border: none;
-    color: var(--text-color);
     background-color: var(--input-background);
     border-right: none;
     box-sizing: border-box;
@@ -230,7 +230,6 @@ div.container form .field {
     border: 1px solid var(--background);
     display:block;
     background-color: var(--input-background);
-    color: var(--text-color);
     padding: 0.75em;
     box-sizing: border-box;
     resize: none;
@@ -331,7 +330,6 @@ div.container form .reset {
 .article code { 
     font-family: "Menlo", monospace;
     font-size: 85%;
-    color: var(--text-color);
     background: var(--input-background);
     margin: 0 0 1em 0;
     padding: 15px 25px 15px 15px;
@@ -481,9 +479,8 @@ body.article-page .container {
     content: " \204e";
 }
 
-.article h1, .artcile h2, .artcile h3, .artcile h4, .artcile h5 {
+.article h1, .article h2, .article h3, .article h4, .article h5 {
     color: var(--header-color);
-    text-transform: uppercase;
     line-height: 1;
 }
 
@@ -504,3 +501,5 @@ body.article-page .container {
 .article h3 {
     font-size: 1rem;
 }
+
+/* MEDIA RULES */
