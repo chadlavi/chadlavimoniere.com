@@ -1,26 +1,21 @@
 <?php
 include '../php/gzip.php';
-include '../php/connect.php';
 $title = 'Chad Lavimoniere';
-$meta = 'Case studies in product design';
+$meta = 'Chad Lavimoniere\'s website';
 $keywords = 'UX, User Experience Design, Product Design, Web Design, prototyping';
 include '../php/header.php';
-include '../php/seoURL.php';
 
-if ($result = $mysqli->query("SELECT id, name, image_url from article order by created desc")) {
-    echo'<body class="list">';
-    include '../php/nav.php';
-    echo '<div class="container">';
-    #echo '<h1>Chad Lavimoniere</h1>';
-    echo '<ul>';
-    while ($row = mysqli_fetch_assoc($result)) {
-        include '../php/list.php';
-    }
-    echo '</ul>';
-    $result->close();
-}
+echo'<body class="hero is-info is-fullheight is-bold">';
+include '../php/nav.php';
+echo '
 
-$mysqli->close();
+<div class="hero-body">
+    <div class="container has-text-centered">
+        <h1 class="title">Hi there, I\'m Chad 🙋‍♂️</h1>
+        <h2 >I\'m a product designer, creative technologist, and FE hack in Brooklyn, NY.</h2>
+    </div>
+    
+';
 
 include '../php/footer.php';
 ?>

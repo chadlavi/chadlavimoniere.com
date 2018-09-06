@@ -54,7 +54,7 @@ if (isset($_REQUEST['submitted'])) {
     }
 }
 
-echo '<form id="comtact" action="" method="post">
+echo '<form id="contact" action="" method="post">
     <input class="field" name="email" autofocus required type="email" placeholder="jane@doe.com" value="' . $email . '"/>
     <label for="email">email address</label>
     <input required class="field" name="name" type="text" placeholder="Jane Doe" value="' . $name . '"/>
