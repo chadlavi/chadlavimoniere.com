@@ -1,0 +1,7 @@
+Options +FollowSymLinks
+DirectoryIndex index.php
+
+AuthName "Good news, everyone!"
+AuthType Basic
+AuthUserFile /var/www/html/portfolio/.htpasswd
+require valid-user

@@ -9,7 +9,7 @@ echo '<body class="article-page">';
 
 include '../php/nav.php';
 
-echo '<div class="container"><h1>Contact</h1><div class="article contact">';
+echo '<div class="section container"><h1 class="title">Contact</h1><div class="article contact">';
 include '../php/contact.php';
 echo'</div>';
 
