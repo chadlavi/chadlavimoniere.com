@@ -1,9 +1,6 @@
- @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,900,900i');
 
 /* VARIABLES */
 :root {
-    /* FONTS */
-    --font-name: 'Nunito Sans', Arial, sans-serif;
 
     /* GENERIC COLORS */
     --red:               crimson;
@@ -62,7 +59,6 @@
 }
 
 body {
-    font-family: var(--font-name);
     font-size: var(--body-font-size);
     margin: 0;
     color: var(--text-color);
@@ -136,7 +132,6 @@ div.navwrap div.nav ul li a *{
     resize: none;
     vertical-align: middle;
     font-size: var(--search-font-size);
-    font-family: var(--font-name);
     padding-left: 10px;
 }
 
@@ -234,7 +229,6 @@ div.container form .field {
     width: 400px;
     border: 1px solid var(--background);
     display:block;
-    font-family: var(--font-name);
     background-color: var(--input-background);
     color: var(--text-color);
     padding: 0.75em;
@@ -278,7 +272,6 @@ div.container form button.submit {
     border-radius: 0;
     background: var(--button-color);
     color: white;
-    font-family: var(--font-name);
     font-weight: bold;
     font-size: inherit;
     box-shadow: none;
@@ -321,13 +314,18 @@ div.container form .reset {
     font-weight: normal;
     font-size: 93%;
     border-left: 25px solid hsla(0, 0%, 83%, 0.5);
-    padding: 1.5em;
+    padding: 1em 2em;
     margin: 2em 0;
     background: var(--input-background);
 }
 
 .article blockquote>* {
     margin: 0;
+}
+
+.article pre {
+    background: none;
+    padding: 0;
 }
 
 .article code { 
@@ -464,27 +462,6 @@ body.article-page .container {
     -webkit-filter: brightness(0.5);
 }
 
-.article-page div.masthead {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    height: 400px;
-    overflow: hidden;
-    position: fixed;
-    z-index: -1;
-    background-size: cover;
-    background-position: center;
-}
-
-.article-page div.masthead img {
-    width: 100%;
-}
-.article-page div.envelope {
-    background: var(--background);
-    padding: var(--vertical-space) 0;
-    margin: 200px 0 0 0;
-}
-
 .article-page .container .article ul li {
     line-height: var(--line-height);
     font-weight: normal;
@@ -510,44 +487,20 @@ body.article-page .container {
     line-height: 1;
 }
 
-.artcile h1:before {
-    content: '# ';
-    color: var(--light-text-color);
-}
-
-.article h2:before {
-    content: '## ';
-    color: var(--light-text-color);
-}
-
-.article h3:before {
-    content: '### ';
-    color: var(--light-text-color);
-}
-
-.article h4:before {
-    content: '#### ';
-    color: var(--light-text-color);
-}
-
-.article h1 + h4 {
-    margin: -1em 0 0 0;
-    font-size: 75%;
-    font-weight: normal;
-}
-
-
-.article h2 {
-    margin: 30px 0 0 0;
-}
-
-.article h2 + p, .artcile h3 + p {
+.article h2 + p, .article h3 + p {
     margin-top: 0;
 }
 
-.article h3 {
+.article h3, .article h2{
     margin-bottom: 0;
-    font-weight: 900;
-    text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: -.15px;
+}
+
+.article h2 {
+    font-size: 1.5rem;
+}
+
+.article h3 {
+    font-size: 1rem;
 }

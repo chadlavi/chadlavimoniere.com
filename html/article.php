@@ -17,15 +17,8 @@ if (isset($_GET['article'])){
             include '../php/header.php';
             echo '<body class="article-page">';
             include '../php/nav.php';
-            if (!empty($row['image_url'])) {
-                #echo '<div class="masthead"><img src="' . $row['image_url'] . '"></div><div class="envelope">';
-                echo '<div class="masthead" style="background-image: url(\'' . $row['image_url'] . '\');"></div><div class="envelope">';
-                echo '<div class="container">';
-                echo '<h1 class="title">' . $row['name'] . '</h1><h4 class="heading subtitle">Posted ' . timezone($row['created']) . ' - Last updated ' . timezone($row['updated']) . '</h4> <div class="article">' . $Parsedown->text($row['body']) . '</div></div>';
-            } else {
-                echo '<div class="container">';
-                echo '<h1 class="title">' . $row['name'] . '</h1><h4 class="heading subtitle">Posted ' . timezone($row['created']) . ' - Last updated ' . timezone($row['updated']) . '</h4> <div class="article">' . $Parsedown->text($row['body']) . '</div>';
-            }
+            echo '<div class="section container">';
+            echo '<h1 class="title">' . $row['name'] . '</h1><h4 class="heading subtitle">Posted ' . timezone($row['created']) . ' - Last updated ' . timezone($row['updated']) . '</h4> <div class="article">' . $Parsedown->text($row['body']) . '</div>';
         }
         $result->close();
     } else {
