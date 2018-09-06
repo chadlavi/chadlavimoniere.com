@@ -6,7 +6,7 @@ echo '<!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.
         <div class="navbar-end">
             <a class="navbar-item navbar-end" href="/about" title="about" alt="about">🙋‍♂️ About me</a>
             <a class="navbar-item navbar-end" href="/contact" title="contact" alt="contact">📬 Contact</a>
-            <a class="navbar-item navbar-end" href="/portfolio" title="portfolio" alt="portfolio" target="_blank">💼 Portfolio</a>
+            <a class="navbar-item navbar-end" href="/portfolio" title="portfolio" alt="portfolio">💼 Portfolio</a>
         </div>
     </nav>
 </div>';
