@@ -379,6 +379,7 @@ div.container>ul>li>div.background>img {
     min-width: 100%;
     min-height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 div.container>ul>li>a:hover+div.background {
