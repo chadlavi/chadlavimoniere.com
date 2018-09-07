@@ -5,7 +5,7 @@ $keywords = 'UX, User Experience Design, Web Design, prototyping';
 include '../php/gzip.php';
 include '../php/header.php';
 
-echo '<body class="article-page">';
+echo '<body class="">';
 
 include '../php/nav.php';
 

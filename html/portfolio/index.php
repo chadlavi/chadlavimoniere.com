@@ -11,7 +11,7 @@ if ($result = $mysqli->query("SELECT id, name, image_url from article where hide
     echo'<body class="list">';
     include '../../php/nav.php';
     echo '<div class="section container">';
-    #echo '<h1>Chad Lavimoniere</h1>';
+    echo '<h1 class="title">My Portfolio</h1>';
     echo '<ul>';
     while ($row = mysqli_fetch_assoc($result)) {
         include '../../php/list.php';

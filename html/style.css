@@ -67,109 +67,13 @@ body {
 }
 
 div.navwrap {
-    width: 100%;
-    top: 0;
-    margin: 0;
     height: var(--nav-height);
-}
-
-div.navwrap div.nav {
-    height: inherit;
-    position: fixed;
-    width: 100%;
-    background-color: var(--background);
-    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1);
-    border-bottom: 1px solid var(--input-background);
-    z-index: 3;
-}
-
-div.navwrap div.nav ul {
-    margin: 0;
-    padding: 10px;
-    height: 100%;
-    width: 100%;
-    list-style: none;
-    display: flex;
-    box-sizing: border-box;
-}
-
-div.navwrap div.nav ul li {
-    margin: 0 10px 0 0;
-    font-size: var(--nav-font-size);
-    font-weight: normal;
-}
-
-
-div.navwrap div.nav ul li a {
-    vertical-align: middle;
-}
-
-div.navwrap div.nav ul li a *{
-    vertical-align: middle;
-}
-
-.nav .search {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    height: 30px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    resize: none;
-    font-weight: lighter;
-}
-
-.nav .search .search-box {
-    height: 100%;
-    width: 250px;
-    max-width: 40vw;
-    margin: 0;
-    border: none;
-    background-color: var(--input-background);
-    border-right: none;
-    box-sizing: border-box;
-    resize: none;
-    vertical-align: middle;
-    font-size: var(--search-font-size);
-    padding-left: 10px;
-}
-
-.nav .search .submit-button {
-    height: 100%;
-    border: none;
-    color: var(--white);
-    background-color: var(--button-color);
-    padding: 0 0.65em;
-    margin: 0;
-    font-size: var(--search-font-size);
-    vertical-align: middle;
-    font-family: fontawesome;
 }
 
 .article div.container {
     max-width: 90vw;
     margin: var(--vertical-space) auto;
     margin-bottom: 100px;
-}
-
-body.list>div.container {
-    max-width: calc(100vw - 10px);
-    margin: 10px auto 0 auto;}
-
-body.list>div.container>.search-title {
-    text-align: center;
-    line-height: 1.2em;
-}
-
-body.list>div.container>.clear-results {
-    background-color: var(--button-color);
-    color: white;
-    margin: 0 auto 1em auto;
-    width: 250px;
-    text-align: center;
-    display: block;
-    padding: 5px;
 }
 
 div.article {
