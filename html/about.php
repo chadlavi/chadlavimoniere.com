@@ -12,7 +12,7 @@ include '../php/nav.php';
 echo '<div class="container section">';
 echo '
     <h1 class="title">About Me</h1>
-    <div class="container is-fluid section is-flex-desktop">
+    <div class="container is-flex-desktop">
         <article class="media box is-shadowless">        
             <div class="media-left is-hidden-touch">
             <figure class="image is-128x128">
