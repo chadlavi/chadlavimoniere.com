@@ -391,7 +391,7 @@ div.container>ul>li>a:hover+div.background {
 }
 
 body.article-page .container {
-    width: var(--article-width);
+    max-width: var(--article-width);
 }
 
 .article-page .container a {

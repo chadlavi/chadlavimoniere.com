@@ -14,7 +14,7 @@ echo '
     <div class="container is-fluid">
         <h1 class="title">Chad Lavimoniere</h1>
         <article class="media section">        
-            <div class="media-left">
+            <div class="media-left is-hidden-touch">
             <figure class="image is-128x128">
                 <img src="/images/headshot.png" class="is-rounded" alt="image of the author" title="yep, that\'s me">
             </figure>
