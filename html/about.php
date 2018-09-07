@@ -1,6 +1,7 @@
 <?php
-$title = 'About';
-$meta = 'Chad Lavimoniere';
+$title = 'About Chad Lavimoniere';
+$meta = 'Chad Lavimoniere is a UX/UI designer and creative technologist based in Brooklyn, NY';
+$og_image = 'http://chadlavimoniere.com/images/headshot.png';
 $keywords = 'UX, User Experience Design, Web Design, prototyping';
 include '../php/gzip.php';
 include '../php/header.php';
@@ -22,7 +23,7 @@ echo '
             <div class="media-content">
                 <p class="content">I\'m a Product designer, creative technologist, and frontend hack with nearly a decade\'s experience building ecommerce sites, B2B web apps, and design tools.</p>
                 <p class="content">I live in Brooklyn with my wife, dog, sourdough starter, 29 houseplants, and three raspberry pis (two pi0ws, one 2b+. Ask me about \'em!).</p>
-                <p class="content"></p>
+                <p class="content">I built this website myself. It\'s running on a basic LAMP stack.</p>
             </div>
         </article>
         <article class="box">

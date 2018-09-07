@@ -12,7 +12,8 @@ if (isset($_GET['article'])){
     if (mysqli_num_rows($result)==1) {
         while ($row = mysqli_fetch_assoc($result)) {
             $title = $row['name'];
-            $meta = $row['meta'] ?: 'Case studies in product design';
+            $meta = $row['meta'] ?: 'Chad Lavimoniere is a UX/UI designer and creative technologist based in Brooklyn, NY';
+            if ($row['image_url']) { $og_image = $row['image_url']; }
             $keywords = $row['keywords'] ?: 'UX, User Experience Design, Product Design, Web Design, prototyping';
             include '../php/header.php';
             echo '<body class="article-page">';

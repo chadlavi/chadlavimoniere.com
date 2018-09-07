@@ -1,7 +1,8 @@
 <?php
 include '../php/gzip.php';
 $title = 'Chad Lavimoniere';
-$meta = 'Chad Lavimoniere\'s website';
+$meta = 'Chad Lavimoniere is a UX/UI designer and creative technologist based in Brooklyn, NY';
+$og_image = 'http://chadlavimoniere.com/images/headshot.png';
 $keywords = 'UX, User Experience Design, Product Design, Web Design, prototyping';
 include '../php/header.php';
 

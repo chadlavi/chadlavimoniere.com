@@ -2,6 +2,11 @@
 if (empty($title) || empty($meta)) {
     echo 'title and meta are required variables for header';
 }
+
+if (empty($og_image)) {
+    $og_image = '';
+}
+
 echo '<!DOCTYPE html> 
 <html> 
 <head> 
@@ -15,6 +20,7 @@ echo '<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:description" content="' . $meta . '">
   <meta property="og:title" content="' . $title . '">
+  <meta property="og:image" content="' . $og_image . '">
   <title>' . $title . '</title>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script>
