@@ -39,7 +39,7 @@ echo '<!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.
         </div>
         <div class="navbar-end">
             <div class="navbar-menu" id="navMenu">
-                <a class="navbar-item navbar-end" href="/about" title="about" alt="about">🙋‍♂️ About me</a>
+                <a class="navbar-item navbar-end" href="/about" title="about" alt="about"><span style="font-family: sans-serif !important;">🙋‍♂️</span> About me</a>
                 <a class="navbar-item navbar-end" href="/contact" title="contact" alt="contact">📬 Contact</a>
                 <a class="navbar-item navbar-end" href="/portfolio" title="portfolio" alt="portfolio">💼 Portfolio</a>
             </div>

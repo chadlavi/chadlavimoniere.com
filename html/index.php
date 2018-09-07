@@ -12,7 +12,7 @@ echo '
 
 <div class="hero-body">
     <div class="container has-text-centered">
-        <h1 class="title">Hi there, I\'m Chad 🙋‍♂️</h1>
+        <h1 class="title">Hi there, I\'m Chad <span style="font-family: sans-serif !important;">🙋‍♂️</span></h1>
         <h2 >I\'m a product designer, creative technologist, and FE hack in Brooklyn, NY.</h2>
     </div>
     
