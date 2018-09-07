@@ -1,3 +1,5 @@
+/* PRINT CSS */
+@import url('print.css') print;
 
 /* VARIABLES */
 :root {
@@ -404,3 +406,4 @@ body.article-page .container {
 }
 
 /* MEDIA RULES */
+

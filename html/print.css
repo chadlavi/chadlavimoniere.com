@@ -1,0 +1,43 @@
+@page {
+    margin: 0.5in 1in !important;
+}
+
+.navwrap {
+    display: none;
+}
+
+body {
+}
+
+body > .section {
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    page-break-after: avoid;
+}
+
+h6 {
+    page-break-before: avoid;
+}
+
+body.list ul {
+    display: block !important;
+}
+
+body.list ul li {
+    width: calc(50% - 10px) !important;
+}
+
+pre, blockquote, li, img {
+    page-break-inside: avoid !important;
+}
+
+img {
+    max-width: 60% !important;
+}
+
+body.article-page a[href]:after {
+    content: " (" attr(href) ")";
+}
