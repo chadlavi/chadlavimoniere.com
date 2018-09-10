@@ -19,7 +19,7 @@ if (isset($_GET['article'])){
             echo '<body class="article-page">';
             include '../php/nav.php';
             echo '<div class="section container">';
-            echo '<h1 class="title">' . $row['name'] . '</h1><h4 class="heading subtitle">Posted ' . timezone($row['created']) . ' - Last updated ' . timezone($row['updated']) . '</h4> <div class="article">' . $Parsedown->text($row['body']) . '</div>';
+            echo '<h1 class="title">' . $row['name'] . '</h1> <div class="article">' . $Parsedown->text($row['body']) . '</div>';
         }
         $result->close();
     } else {
