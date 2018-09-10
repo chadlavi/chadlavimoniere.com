@@ -228,29 +228,6 @@ div.container form .reset {
     margin: 0;
 }
 
-.article pre {
-    background: none;
-    padding: 0;
-}
-
-.article code { 
-    font-family: "Menlo", monospace;
-    font-size: 85%;
-    background: var(--input-background);
-    margin: 0 0 1em 0;
-    padding: 15px 25px 15px 15px;
-    max-width: 100%;
-    max-height: 500em;
-    overflow: scroll;
-    border-radius: 3px;
-    box-sizing: border-box;
-    white-space: pre-wrap;
-    display: inline-block;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-}
-
 code::-webkit-scrollbar {
     display: none; 
 }
