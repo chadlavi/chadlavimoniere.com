@@ -54,6 +54,7 @@ if (isset($_REQUEST['submitted'])) {
     }
 }
 
+/*
 echo '<form id="contact" action="" method="post">
     <input class="field" name="email" autofocus required type="email" placeholder="jane@doe.com" value="' . $email . '"/>
     <label for="email">email address</label>
@@ -64,5 +65,15 @@ echo '<form id="contact" action="" method="post">
     <div class="g-recaptcha" data-theme="light" data-sitekey="6LdxZSMUAAAAAKoaHPjNw_87O5zF1i71XKZyW94S"></div>
     <button class="submit" name="submitted" type="submit" value="Submit" />Send</button>
     </form>';
+*/
+
+echo '
+<p>
+    twitter: <a href="https://twitter.com/chadlavimoniere" target="_blank">@chadlavimoniere</a>
+</p>
+<p>
+    github: <a href="https://github.com/chadlavi">chadlavi</a> and <a href="https://github.com/chadlavi-casebook">chadlavi-casebook</a>
+</p>
+'
 
 ?>

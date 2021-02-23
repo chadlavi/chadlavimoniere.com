@@ -1,6 +1,6 @@
 <?php
 echo "<script>
-var msg = `NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNx;,,,:0NNNNNNNNNNNNNNNNNNNNNNXXXXX
+var msg = `%cNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNx;,,,:0NNNNNNNNNNNNNNNNNNNNNNXXXXX
 NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNx,,,,,,;ONNNNNNNNNNNNNNNNNNNNNXXXXX
 NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNc,,,,,,;lNNNNNNNNNNNNNNNNNNNNNXXXXX
 NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNO:;;;;;:ONNNNNNNNNNNNNNNNNNNNNNXXXN
@@ -41,12 +41,18 @@ dddkOxxxkOK0OkkkkkOOKKKOxkO:,'............',;lkOKXKlO0000OkOOO0OO0000000KKXXNWNN
 xxdxx0OxxkxOKKOxkkcd000k..kc'''.............,d0OOO000000OOOOO00OO000000000XXXNNN
 dxxxdx00kxxxk0X0xd '0O0KXKk,.................o0XOk000000OO0OO0OO0000000000XXXXXN
 
-chadlavmoniere.com is built by a small team of zero engineers, one designer,
-zero researchers, a few robots, and no others in any different sites across the
-globe. It is updated sometimes, and built with a number of tools and
-technologies than one could feasibly shake a stick at. If you'd like to hire
-Chad, head to chadlavimoniere.com/contact, and tell 'em the console logs sent
-ya.`
+chadlavmoniere.com is built by a small team of one engineer, one designer,
+(same person), a few robots, and no others in any different sites across the
+globe. It is updated sometimes, and made with a number of tools and technologies
+than one could feasibly shake a stick at.
 
-console.log(msg)</script>";
+If you want to access http://chadlavimoniere.com/portfolio, the login info is:
+
+user: 'phillipjfry'
+password: 'hireme'
+
+And if you would like to hire me, email chad@chadlavimoniere.com, and let me
+know the console logs sent ya!`
+
+console.log(msg, 'font-family: monospace')</script>";
 ?>
